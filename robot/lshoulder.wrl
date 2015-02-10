@@ -2,6 +2,10 @@
 Background {
 	skyColor [ 0.627451 0.627451 0.627451 ]
 }
+Transform {
+  scale 0.01 0.01 0.01
+  rotation 0 0 1 1.5708
+  children 
 Shape { # triangle mesh
 	appearance Appearance {
 		material 	Material {
@@ -893,3 +897,4 @@ Shape { # triangle mesh
 		] } # 241 texCoord points
 	} # geometry
 } # triangle mesh
+}
