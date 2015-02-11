@@ -232,7 +232,16 @@ DEF JVRC Humanoid {
       translation 0 0 0.746
       children [
         DEF PELVIS_S Segment {
+	  mass 10
+	  centerOfMass -0.01 0 0.034
+	  momentsOfInertia [0.08958333333333333 0 0 0 0.08958333333333333 0 0 0 0.11249999999999999]
 	  children [
+            DEF gsensor AccelerationSensor {
+              sensorId 0
+            }
+            DEF gyrometer Gyro {
+              sensorId 0
+            }
 	    Inline { url "pelvis.wrl" }
 	  ]
 	}
@@ -245,6 +254,8 @@ DEF JVRC Humanoid {
 	  llimit [-2.0943951023931953] #-120
 	  children [
 	    DEF R_HIP_P_S Segment {
+	      mass 1
+	      momentsOfInertia [0.0019600000000000004 0 0 0 0.0019600000000000004 0 0 0 0.0019600000000000004]
 	    }
 	    DEF R_HIP_R Joint {
 	      jointType "rotate"
@@ -254,6 +265,8 @@ DEF JVRC Humanoid {
 	      llimit [-0.7853981633974483] #-45
 	      children [
 	        DEF R_HIP_R_S Segment {
+		  mass 1
+	          momentsOfInertia [0.0019600000000000004 0 0 0 0.0019600000000000004 0 0 0 0.0019600000000000004]
 		  children [
 		    Inline { url "rhip.wrl" }
 		  ]
@@ -266,6 +279,9 @@ DEF JVRC Humanoid {
 		  llimit [-0.5235987755982988] #-30
 		  children [
 		    DEF R_HIP_Y_S Segment {
+		      mass 3
+		      centerOfMass 0.01 0 -0.22
+		      momentsOfInertia [0.03192500000000001 0 0 0 0.03452500000000001 0 0 0 0.00865]
 		      children [
 		        Inline { url "rthigh.wrl" }
 		      ]
@@ -279,6 +295,9 @@ DEF JVRC Humanoid {
 		      llimit [0] #-0
 		      children [
 		        DEF R_KNEE_S Segment {
+			  mass 3
+			  centerOfMass 0.04 0 -0.16
+		          momentsOfInertia [0.03192500000000001 0 0 0 0.03452500000000001 0 0 0 0.00865]
 			  children [
 			    Inline { url "rshank.wrl" }
 			    Transform {
@@ -296,6 +315,8 @@ DEF JVRC Humanoid {
 			  llimit [-1.4835298641951802] #-85
 			  children [
 			    DEF R_ANKLE_P_S Segment {
+			      mass 1
+			      momentsOfInertia [0.00064 0 0 0 0.00064 0 0 0 0.00064]
 			      children [
 			      ]
 			    }
@@ -307,6 +328,9 @@ DEF JVRC Humanoid {
 			      llimit [-0.6108652381980153] #-35
 			      children [
 			        DEF R_ANKLE_R_S Segment {
+				  mass 1.5
+				  centerOfMass 0.03 0 -0.07
+				  momentsOfInertia [0.0014166666666666668 0 0 0 0.0056166666666666665 0 0 0 0.006216666666666666]
 				  children [
 				    Inline { url "rfoot.wrl" }
 				  ]
@@ -332,6 +356,8 @@ DEF JVRC Humanoid {
 	  llimit [-2.0943951023931953] #-120
 	  children [
 	    DEF L_HIP_P_S Segment {
+	      mass 1
+	      momentsOfInertia [0.0019600000000000004 0 0 0 0.0019600000000000004 0 0 0 0.0019600000000000004]
 	    }
 	    DEF L_HIP_R Joint {
 	      jointType "rotate"
@@ -341,6 +367,8 @@ DEF JVRC Humanoid {
 	      llimit [-0.3490658503988659] #-20
 	      children [
 	        DEF L_HIP_R_S Segment {
+		  mass 1
+	          momentsOfInertia [0.0019600000000000004 0 0 0 0.0019600000000000004 0 0 0 0.0019600000000000004]
 		  children [
 		    Inline { url "lhip.wrl" }
 		  ]
@@ -353,6 +381,9 @@ DEF JVRC Humanoid {
 		  llimit [-0.7853981633974483] #-45
 		  children [
 		    DEF L_HIP_Y_S Segment {
+		      mass 3
+		      centerOfMass 0.01 0 -0.22
+		      momentsOfInertia [0.03192500000000001 0 0 0 0.03452500000000001 0 0 0 0.00865]
 		      children [
 		        Inline { url "lthigh.wrl" }
 		      ]
@@ -366,6 +397,9 @@ DEF JVRC Humanoid {
 		      llimit [0] #-0
 		      children [
 		        DEF L_KNEE_S Segment {
+			  mass 3
+			  centerOfMass 0.04 0 -0.16
+		          momentsOfInertia [0.03192500000000001 0 0 0 0.03452500000000001 0 0 0 0.00865]
 			  children [
 			    Inline { url "lshank.wrl" }
 			    Transform {
@@ -383,6 +417,8 @@ DEF JVRC Humanoid {
 			  llimit [-1.4835298641951802] #-85
 			  children [
 			    DEF L_ANKLE_P_S Segment {
+			      mass 1
+			      momentsOfInertia [0.00064 0 0 0 0.00064 0 0 0 0.00064]
 			      children [
 			      ]
 			    }
@@ -394,6 +430,9 @@ DEF JVRC Humanoid {
 			      llimit [-0.7853981633974483] #-45
 			      children [
 			        DEF L_ANKLE_R_S Segment {
+				  mass 1.5
+				  centerOfMass 0.03 0 -0.07
+				  momentsOfInertia [0.0014166666666666668 0 0 0 0.0056166666666666665 0 0 0 0.006216666666666666]
 				  children [
 				    Inline { url "lfoot.wrl" }
 				  ]
@@ -419,6 +458,9 @@ DEF JVRC Humanoid {
 	  llimit [-0.7853981633974483] #-45
 	  children [
 	    DEF WAIST_Y_S Segment {
+	      mass 1
+	      centerOfMass 0 0 -0.07
+	      momentsOfInertia [0.0017333333333333335 0 0 0 0.0017333333333333335 0 0 0 0.0032]
 	      children [
 	        Inline { url "waist.wrl" }
 	      ]
@@ -431,6 +473,8 @@ DEF JVRC Humanoid {
 	      llimit [-0.5235987755982988] #-30
 	      children [
 	        DEF WAIST_P_S Segment {
+		  mass 1
+		  momentsOfInertia [0.0024500000000000004 0 0 0 0.002425 0 0 0 0.002425]
 		}
 		DEF WAIST_R Joint {
 		  jointType "rotate"
@@ -440,6 +484,9 @@ DEF JVRC Humanoid {
 		  llimit [-0.8726646259971648] #-50
 		  children [
 		    DEF WAIST_R_S Segment {
+		      mass 10
+		      centerOfMass 0.02 0 0.24
+		      momentsOfInertia [0.15708333333333335 0 0 0 0.10108333333333334 0 0 0 0.1366666666666667]
 		      children [
 		        Inline { url "chest.wrl" }
 		      ]
@@ -453,6 +500,9 @@ DEF JVRC Humanoid {
 		      llimit [-1.2217304763960306] #-70
 		      children [
 		        DEF NECK_Y_S Segment {
+			  mass 0.5
+			  centerOfMass 0 0 -0.05
+			  momentsOfInertia [0.0007291666666666668 0 0 0 0.0007291666666666668 0 0 0 0.0006250000000000001]
 			  children [
 			    Inline { url "neck.wrl" }
 			  ]
@@ -465,6 +515,8 @@ DEF JVRC Humanoid {
 			  llimit [-0.8726646259971648] #-50
 			  children [
 			    DEF NECK_R_S Segment {
+			      mass 0.5
+			      momentsOfInertia [0.0005000000000000001 0 0 0 0.0005000000000000001 0 0 0 0.0005000000000000001]
 			    }
 			    DEF NECK_P Joint {
 			      jointType "rotate"
@@ -474,6 +526,9 @@ DEF JVRC Humanoid {
 			      llimit [-0.8726646259971648] #-50
 			      children [
 			        DEF NECK_P_S Segment {
+				  mass 2
+				  centerOfMass 0.01 0 0.11
+				  momentsOfInertia [0.00968 0 0 0 0.00968 0 0 0 0.00968]
 				  children [
 				    Inline { url "head.wrl" }
 				  ]
@@ -493,6 +548,8 @@ DEF JVRC Humanoid {
 		      llimit [-3.141592653589793] #-180
 		      children [
 		        DEF R_SHOULDER_P_S Segment {
+			  mass 1
+	                  momentsOfInertia [0.0019600000000000004 0 0 0 0.0019600000000000004 0 0 0 0.0019600000000000004]
 			  children [
 			    Inline { url "rshoulder.wrl" }
 			  ]
@@ -505,6 +562,8 @@ DEF JVRC Humanoid {
 			  llimit [-1.7453292519943295] #-100
 			  children [
 			    DEF R_SHOULDER_R_S Segment {
+			      mass 1
+	                      momentsOfInertia [0.0019600000000000004 0 0 0 0.0019600000000000004 0 0 0 0.0019600000000000004]
 			    }
 			    DEF R_SHOULDER_Y Joint {
 			      jointType "rotate"
@@ -514,6 +573,9 @@ DEF JVRC Humanoid {
 			      llimit [-1.5707963267948966] #-90
 			      children [
 			        DEF R_SHOULDER_Y_S Segment {
+				  mass 2
+				  centerOfMass -0.01 0 -0.19
+				  momentsOfInertia [0.013649999999999999 0 0 0 0.0146 0 0 0 0.006350000000000001]
 				  children [
 				    Inline { url "ruarm.wrl" }
 				  ]
@@ -527,6 +589,9 @@ DEF JVRC Humanoid {
 				  llimit [-2.5307274153917776] #-145
 				  children [
 				    DEF R_ELBOW_P_S Segment {
+				      mass 1
+				      centerOfMass -0.02 0 -0.1
+				      momentsOfInertia [0.010675000000000002 0 0 0 0.010675000000000002 0 0 0 0.0026999999999999997]
 				      children [
 				        Inline { url "rlarm.wrl" }
 				      ]
@@ -540,6 +605,8 @@ DEF JVRC Humanoid {
 				      llimit [-1.9198621771937625] #-110
 				      children [
 				        DEF R_ELBOW_Y_S Segment {
+					  mass 1
+					  momentsOfInertia [0.00064 0 0 0 0.00064 0 0 0 0.00064] 
 					  children [
 					    Inline { url "rwrist.wrl" }
 					  ]
@@ -552,6 +619,8 @@ DEF JVRC Humanoid {
 					  llimit [-1.9198621771937625] #-110
 					  children [
 					    DEF R_WRIST_R_S Segment {
+					      mass 0.5
+					      momentsOfInertia [0.00032 0 0 0 0.00032 0 0 0 0.00032]
 					    }
 					    DEF R_WRIST_Y Joint {
 					      jointType "rotate"
@@ -561,6 +630,9 @@ DEF JVRC Humanoid {
 					      llimit [-2.6179938779914944] #-150
 					      children [
 					        DEF R_WRIST_Y_S Segment {
+						  mass 0.5
+						  centerOfMass 0 0.01 -0.06
+						  momentsOfInertia [0.0004625 0 0 0 0.0007625 0 0 0 0.0004625]
 						  children [
 						    Inline { url "rpalm.wrl" }
 						  ]
@@ -574,6 +646,9 @@ DEF JVRC Humanoid {
 						  llimit [-0.7853981633974483] #-45
 						  children [
 						    DEF R_UTHUMB_S Segment {
+						      mass 0.2
+						      centerOfMass 0 0 -0.015
+						      momentsOfInertia [6.166666666666667e-05 0 0 0 6.166666666666667e-05 0 0 0 2.666666666666667e-05]
 						      children [
 						        Inline { url "ruthumb.wrl" }
 						      ]
@@ -587,6 +662,9 @@ DEF JVRC Humanoid {
 						      llimit [-1.5707963267948966] #-90
 						      children [
 						        DEF R_LTHUMB_S Segment {
+							  mass 0.2
+						          centerOfMass 0 0 -0.015
+						          momentsOfInertia [6.166666666666667e-05 0 0 0 6.166666666666667e-05 0 0 0 2.666666666666667e-05]
 							  children [
 							    Inline { url "rlthumb.wrl" }
 							  ]
@@ -604,6 +682,9 @@ DEF JVRC Humanoid {
 						  llimit [0] #-0
 						  children [
 						    DEF R_UINDEX_S Segment {
+						      mass 0.2
+						      centerOfMass 0 0 -0.015
+						      momentsOfInertia [6.166666666666667e-05 0 0 0 6.166666666666667e-05 0 0 0 2.666666666666667e-05]
 						      children [
 						        Inline { url "ruindex.wrl" }
 						      ]
@@ -617,6 +698,9 @@ DEF JVRC Humanoid {
 						      llimit [0] #-0
 						      children [
 						        DEF R_LINDEX_S Segment {
+							  mass 0.2
+						          centerOfMass 0 0 -0.015
+						          momentsOfInertia [6.166666666666667e-05 0 0 0 6.166666666666667e-05 0 0 0 2.666666666666667e-05]
 							  children [
 							    Inline { url "rlindex.wrl" }
 							  ]
@@ -634,6 +718,9 @@ DEF JVRC Humanoid {
 						  llimit [0] #-0
 						  children [
 						    DEF R_ULITTLE_S Segment {
+						      mass 0.2
+						      centerOfMass 0 0 -0.015
+						      momentsOfInertia [6.166666666666667e-05 0 0 0 6.166666666666667e-05 0 0 0 2.666666666666667e-05]
 						      children [
 						        Inline { url "rulittle.wrl" }
 						      ]
@@ -647,6 +734,9 @@ DEF JVRC Humanoid {
 						      llimit [0] #-0
 						      children [
 						        DEF R_LLITTLE_S Segment {
+							  mass 0.2
+						          centerOfMass 0 0 -0.015
+						          momentsOfInertia [6.166666666666667e-05 0 0 0 6.166666666666667e-05 0 0 0 2.666666666666667e-05]
 							  children [
 							    Inline { url "rllittle.wrl" }
 							  ]
@@ -678,6 +768,8 @@ DEF JVRC Humanoid {
 		      llimit [-3.141592653589793] #-180
 		      children [
 		        DEF L_SHOULDER_P_S Segment {
+			  mass 1
+	                  momentsOfInertia [0.0019600000000000004 0 0 0 0.0019600000000000004 0 0 0 0.0019600000000000004]
 			  children [
 			    Inline { url "lshoulder.wrl" }
 			  ]
@@ -690,6 +782,8 @@ DEF JVRC Humanoid {
 			  llimit [-0.17453292519943295] #-10
 			  children [
 			    DEF L_SHOULDER_R_S Segment {
+			      mass 1
+	                      momentsOfInertia [0.0019600000000000004 0 0 0 0.0019600000000000004 0 0 0 0.0019600000000000004]
 			    }
 			    DEF L_SHOULDER_Y Joint {
 			      jointType "rotate"
@@ -699,6 +793,9 @@ DEF JVRC Humanoid {
 			      llimit [-1.5707963267948966] #-90
 			      children [
 			        DEF L_SHOULDER_Y_S Segment {
+				  mass 2
+				  centerOfMass -0.01 0 -0.19
+				  momentsOfInertia [0.013649999999999999 0 0 0 0.0146 0 0 0 0.006350000000000001]
 				  children [
 				    Inline { url "luarm.wrl" }
 				  ]
@@ -712,6 +809,9 @@ DEF JVRC Humanoid {
 				  llimit [-2.5307274153917776] #-145
 				  children [
 				    DEF L_ELBOW_P_S Segment {
+				      mass 1
+				      centerOfMass -0.02 0 -0.1
+				      momentsOfInertia [0.010675000000000002 0 0 0 0.010675000000000002 0 0 0 0.0026999999999999997]
 				      children [
 				        Inline { url "llarm.wrl" }
 				      ]
@@ -725,6 +825,8 @@ DEF JVRC Humanoid {
 				      llimit [-1.9198621771937625] #-110
 				      children [
 				        DEF L_ELBOW_Y_S Segment {
+					  mass 1
+					  momentsOfInertia [0.00064 0 0 0 0.00064 0 0 0 0.00064] 
 					  children [
 					    Inline { url "lwrist.wrl" }
 					  ]
@@ -737,6 +839,8 @@ DEF JVRC Humanoid {
 					  llimit [-1.9198621771937625] #-110
 					  children [
 					    DEF L_WRIST_R_S Segment {
+					      mass 0.5
+					      momentsOfInertia [0.00032 0 0 0 0.00032 0 0 0 0.00032]
 					    }
 					    DEF L_WRIST_Y Joint {
 					      jointType "rotate"
@@ -746,6 +850,9 @@ DEF JVRC Humanoid {
 					      llimit [-2.6179938779914944] #-150
 					      children [
 					        DEF L_WRIST_Y_S Segment {
+						  mass 0.5
+						  centerOfMass 0 -0.01 -0.06
+						  momentsOfInertia [0.0004625 0 0 0 0.0007625 0 0 0 0.0004625]
 						  children [
 						    Inline { url "lpalm.wrl" }
 						  ]
@@ -759,6 +866,9 @@ DEF JVRC Humanoid {
 						  llimit [-0] #-0
 						  children [
 						    DEF L_UTHUMB_S Segment {
+						      mass 0.2
+						      centerOfMass 0 0 -0.015
+						      momentsOfInertia [6.166666666666667e-05 0 0 0 6.166666666666667e-05 0 0 0 2.666666666666667e-05]
 						      children [
 						        Inline { url "luthumb.wrl" }
 						      ]
@@ -772,6 +882,9 @@ DEF JVRC Humanoid {
 						      llimit [-0] #-0
 						      children [
 						        DEF L_LTHUMB_S Segment {
+							  mass 0.2
+						          centerOfMass 0 0 -0.015
+						          momentsOfInertia [6.166666666666667e-05 0 0 0 6.166666666666667e-05 0 0 0 2.666666666666667e-05]
 							  children [
 							    Inline { url "llthumb.wrl" }
 							  ]
@@ -789,6 +902,9 @@ DEF JVRC Humanoid {
 						  llimit [1.5707963267948966] #-90
 						  children [
 						    DEF L_UINDEX_S Segment {
+						      mass 0.2
+						      centerOfMass 0 0 -0.015
+						      momentsOfInertia [6.166666666666667e-05 0 0 0 6.166666666666667e-05 0 0 0 2.666666666666667e-05]
 						      children [
 						        Inline { url "luindex.wrl" }
 						      ]
@@ -802,6 +918,9 @@ DEF JVRC Humanoid {
 						      llimit [1.5707963267948966] #-90
 						      children [
 						        DEF L_LINDEX_S Segment {
+							  mass 0.2
+						          centerOfMass 0 0 -0.015
+						          momentsOfInertia [6.166666666666667e-05 0 0 0 6.166666666666667e-05 0 0 0 2.666666666666667e-05]
 							  children [
 							    Inline { url "llindex.wrl" }
 							  ]
@@ -819,6 +938,9 @@ DEF JVRC Humanoid {
 						  llimit [1.5707963267948966] #-90
 						  children [
 						    DEF L_ULITTLE_S Segment {
+						      mass 0.2
+						      centerOfMass 0 0 -0.015
+						      momentsOfInertia [6.166666666666667e-05 0 0 0 6.166666666666667e-05 0 0 0 2.666666666666667e-05]
 						      children [
 						        Inline { url "lulittle.wrl" }
 						      ]
@@ -832,6 +954,9 @@ DEF JVRC Humanoid {
 						      llimit [1.5707963267948966] #-90
 						      children [
 						        DEF L_LLITTLE_S Segment {
+							  mass 0.2
+						          centerOfMass 0 0 -0.015
+						          momentsOfInertia [6.166666666666667e-05 0 0 0 6.166666666666667e-05 0 0 0 2.666666666666667e-05]
 							  children [
 							    Inline { url "lllittle.wrl" }
 							  ]
