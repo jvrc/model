@@ -229,7 +229,7 @@ DEF JVRC Humanoid {
   humanoidBody [
     DEF PELVIS Joint {
       jointType "free"
-      translation 0 0 0.746
+      translation 0 0 0.854
       children [
         DEF PELVIS_S Segment {
 	  mass 10
