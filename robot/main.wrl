@@ -306,28 +306,28 @@ DEF JVRC Humanoid {
 			    }
 			  ]
 			}
-			DEF R_ANKLE_P Joint {
+			DEF R_ANKLE_R Joint {
 			  jointType "rotate"
-			  jointAxis "Y"
+			  jointAxis "X"
 			  jointId 4
+			  ulimit [0.7853981633974483] #+45
+			  llimit [-0.6108652381980153] #-35
 			  translation 0.04 0 -0.357
-			  ulimit [0.9599310885968813] #+55
-			  llimit [-1.4835298641951802] #-85
 			  children [
-			    DEF R_ANKLE_P_S Segment {
+			    DEF R_ANKLE_R_S Segment {
 			      mass 1
 			      momentsOfInertia [0.00064 0 0 0 0.00064 0 0 0 0.00064]
 			      children [
 			      ]
 			    }
-			    DEF R_ANKLE_R Joint {
+			    DEF R_ANKLE_P Joint {
 			      jointType "rotate"
-			      jointAxis "X"
+			      jointAxis "Y"
 			      jointId 5
-			      ulimit [0.7853981633974483] #+45
-			      llimit [-0.6108652381980153] #-35
+			      ulimit [0.9599310885968813] #+55
+			      llimit [-1.4835298641951802] #-85
 			      children [
-			        DEF R_ANKLE_R_S Segment {
+			        DEF R_ANKLE_P_S Segment {
 				  mass 1.5
 				  centerOfMass 0.03 0 -0.07
 				  momentsOfInertia [0.0014166666666666668 0 0 0 0.0056166666666666665 0 0 0 0.006216666666666666]
@@ -336,9 +336,9 @@ DEF JVRC Humanoid {
 				  ]
 				}
 			      ]
-			    } # R_ANKLE_R
+			    } # R_ANKLE_P
 			  ]
-			} # R_ANKLE_P
+			} # R_ANKLE_R
 		      ]
 		    } # R_KNEE
 		  ]
@@ -408,28 +408,28 @@ DEF JVRC Humanoid {
 			    }
 			  ]
 			}
-			DEF L_ANKLE_P Joint {
+			DEF L_ANKLE_R Joint {
 	                  jointType "rotate"
-			  jointAxis "Y"
+			  jointAxis "X"
 			  jointId 10
+			  ulimit [0.6108652381980153] #+35
+			  llimit [-0.7853981633974483] #-45
 			  translation 0.04 0 -0.357
-			  ulimit [0.9599310885968813] #+55
-			  llimit [-1.4835298641951802] #-85
 			  children [
-			    DEF L_ANKLE_P_S Segment {
+			    DEF L_ANKLE_R_S Segment {
 			      mass 1
 			      momentsOfInertia [0.00064 0 0 0 0.00064 0 0 0 0.00064]
 			      children [
 			      ]
 			    }
-			    DEF L_ANKLE_R Joint {
+			    DEF L_ANKLE_P Joint {
 			      jointType "rotate"
-			      jointAxis "X"
+			      jointAxis "Y"
 			      jointId 11
-			      ulimit [0.6108652381980153] #+35
-			      llimit [-0.7853981633974483] #-45
+			      ulimit [0.9599310885968813] #+55
+			      llimit [-1.4835298641951802] #-85
 			      children [
-			        DEF L_ANKLE_R_S Segment {
+			        DEF L_ANKLE_P_S Segment {
 				  mass 1.5
 				  centerOfMass 0.03 0 -0.07
 				  momentsOfInertia [0.0014166666666666668 0 0 0 0.0056166666666666665 0 0 0 0.006216666666666666]
@@ -438,9 +438,9 @@ DEF JVRC Humanoid {
 				  ]
 				}
 			      ]
-			    } # L_ANKLE_R
+			    } # L_ANKLE_P
 			  ]
-			} # L_ANKLE_P
+			} # L_ANKLE_R
 		      ]
 		    } # L_KNEE
 		  ]
