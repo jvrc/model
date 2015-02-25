@@ -252,6 +252,9 @@ DEF JVRC Humanoid {
 	  translation 0 -0.096 0
 	  ulimit [0.7853981633974483] #+45
 	  llimit [-2.0943951023931953] #-120
+	  uvlimit [ 12.56636]
+	  lvlimit [-12.56636]
+	  rotorInertia 0.1925
 	  children [
 	    DEF R_HIP_P_S Segment {
 	      mass 1
@@ -263,6 +266,9 @@ DEF JVRC Humanoid {
 	      jointId 1
 	      ulimit [0.3490658503988659] #+20
 	      llimit [-0.7853981633974483] #-45
+	      uvlimit [ 8.90117]
+	      lvlimit [-8.90117]
+	      rotorInertia 0.1813
 	      children [
 	        DEF R_HIP_R_S Segment {
 		  mass 1
@@ -277,6 +283,9 @@ DEF JVRC Humanoid {
 		  jointId 2
 		  ulimit [0.7853981633974483] #+45
 		  llimit [-0.5235987755982988] #-30
+		  uvlimit [ 8.90117]
+		  lvlimit [-8.90117]
+		  rotorInertia 0.1237
 		  children [
 		    DEF R_HIP_Y_S Segment {
 		      mass 3
@@ -293,6 +302,9 @@ DEF JVRC Humanoid {
 		      translation -0.02 0 -0.389
 		      ulimit [2.6179938779914944] #+150
 		      llimit [0] #-0
+		      uvlimit [ 14.66075]
+		      lvlimit [-14.66075]
+		      rotorInertia 0.1305
 		      children [
 		        DEF R_KNEE_S Segment {
 			  mass 3
@@ -312,6 +324,9 @@ DEF JVRC Humanoid {
 			  jointId 4
 			  ulimit [0.7853981633974483] #+45
 			  llimit [-0.6108652381980153] #-35
+			  uvlimit [ 15.18435]
+			  lvlimit [-15.18435]
+			  rotorInertia 0.0653
 			  translation 0.04 0 -0.357
 			  children [
 			    DEF R_ANKLE_R_S Segment {
@@ -326,6 +341,9 @@ DEF JVRC Humanoid {
 			      jointId 5
 			      ulimit [0.9599310885968813] #+55
 			      llimit [-1.4835298641951802] #-85
+			      uvlimit [ 14.18435]
+			      uvlimit [-14.18435]
+			      rotorInertia 0.1337
 			      children [
 			        DEF R_ANKLE_P_S Segment {
 				  mass 1.5
@@ -354,6 +372,9 @@ DEF JVRC Humanoid {
 	  translation 0 0.096 0
 	  ulimit [0.7853981633974483] #+45
 	  llimit [-2.0943951023931953] #-120
+	  uvlimit [ 12.56636]
+	  lvlimit [-12.56636]
+	  rotorInertia 0.1925
 	  children [
 	    DEF L_HIP_P_S Segment {
 	      mass 1
@@ -365,6 +386,9 @@ DEF JVRC Humanoid {
 	      jointId 7
 	      ulimit [0.7853981633974483] #+45
 	      llimit [-0.3490658503988659] #-20
+	      uvlimit [ 8.90117]
+	      lvlimit [-8.90117]
+	      rotorInertia 0.1813
 	      children [
 	        DEF L_HIP_R_S Segment {
 		  mass 1
@@ -379,6 +403,9 @@ DEF JVRC Humanoid {
 		  jointId 8
 		  ulimit [0.5235987755982988] #+30
 		  llimit [-0.7853981633974483] #-45
+		  uvlimit [ 8.90117]
+		  lvlimit [-8.90117]
+		  rotorInertia 0.1237
 		  children [
 		    DEF L_HIP_Y_S Segment {
 		      mass 3
@@ -395,6 +422,9 @@ DEF JVRC Humanoid {
 		      translation -0.02 0 -0.389
 		      ulimit [2.6179938779914944] #+150
 		      llimit [0] #-0
+		      uvlimit [ 14.66075]
+		      lvlimit [-14.66075]
+		      rotorInertia 0.1305
 		      children [
 		        DEF L_KNEE_S Segment {
 			  mass 3
@@ -414,6 +444,9 @@ DEF JVRC Humanoid {
 			  jointId 10
 			  ulimit [0.6108652381980153] #+35
 			  llimit [-0.7853981633974483] #-45
+			  uvlimit [ 15.18435]
+			  lvlimit [-15.18435]
+			  rotorInertia 0.0653
 			  translation 0.04 0 -0.357
 			  children [
 			    DEF L_ANKLE_R_S Segment {
@@ -428,6 +461,9 @@ DEF JVRC Humanoid {
 			      jointId 11
 			      ulimit [0.9599310885968813] #+55
 			      llimit [-1.4835298641951802] #-85
+			      uvlimit [ 14.18435]
+			      uvlimit [-14.18435]
+			      rotorInertia 0.1337
 			      children [
 			        DEF L_ANKLE_P_S Segment {
 				  mass 1.5
@@ -456,6 +492,9 @@ DEF JVRC Humanoid {
 	  translation 0 0 0.192
 	  ulimit [ 0.7853981633974483] #+45
 	  llimit [-0.7853981633974483] #-45
+	  uvlimit [ 8.90117]
+	  uvlimit [-8.90117]
+	  rotorInertia 0.1221
 	  children [
 	    DEF WAIST_Y_S Segment {
 	      mass 1
@@ -471,6 +510,9 @@ DEF JVRC Humanoid {
 	      jointId 13
 	      ulimit [1.0471975511965976] #+60
 	      llimit [-0.5235987755982988] #-30
+	      uvlimit [ 8.90117]
+	      lvlimit [-8.90117]
+	      rotorInertia 0.1813
 	      children [
 	        DEF WAIST_P_S Segment {
 		  mass 1
@@ -482,6 +524,9 @@ DEF JVRC Humanoid {
 		  jointId 14
 		  ulimit [ 0.8726646259971648] #+50
 		  llimit [-0.8726646259971648] #-50
+		  uvlimit [ 9.42477]
+		  lvlimit [-9.42477]
+		  rotorInertia 0.1054
 		  children [
 		    DEF WAIST_R_S Segment {
 		      mass 10
@@ -498,6 +543,9 @@ DEF JVRC Humanoid {
 		      translation  -0.003 0 0.453
 		      ulimit [ 1.2217304763960306] #+70
 		      llimit [-1.2217304763960306] #-70
+		      uvlimit [ 5.23598]
+		      lvlimit [-5.23598]
+		      rotorInertia 0.0567
 		      children [
 		        DEF NECK_Y_S Segment {
 			  mass 0.5
@@ -513,6 +561,9 @@ DEF JVRC Humanoid {
 			  jointId 16
 			  ulimit [ 0.8726646259971648] #+50
 			  llimit [-0.8726646259971648] #-50
+			  uvlimit [ 5.75958]
+			  lvlimit [-5.75958]
+			  rotorInertia 0.0596
 			  children [
 			    DEF NECK_R_S Segment {
 			      mass 0.5
@@ -524,6 +575,9 @@ DEF JVRC Humanoid {
 			      jointId 17
 			      ulimit [1.0471975511965976] #+60
 			      llimit [-0.8726646259971648] #-50
+			      uvlimit [ 5.75958]
+			      lvlimit [-5.75958]
+			      rotorInertia 0.0596
 			      children [
 			        DEF NECK_P_S Segment {
 				  mass 2
@@ -546,6 +600,9 @@ DEF JVRC Humanoid {
 		      translation 0 -0.24 0.33
 		      ulimit [1.0471975511965976] #+60
 		      llimit [-3.141592653589793] #-180
+		      uvlimit [ 8.90117]
+		      lvlimit [-8.90117]
+		      rotorInertia 0.1210
 		      children [
 		        DEF R_SHOULDER_P_S Segment {
 			  mass 1
@@ -560,6 +617,9 @@ DEF JVRC Humanoid {
 			  jointId 19
 			  ulimit [0.17453292519943295] #+10
 			  llimit [-1.7453292519943295] #-100
+		      	  uvlimit [ 8.90117]
+		      	  lvlimit [-8.90117]
+		      	  rotorInertia 0.1210
 			  children [
 			    DEF R_SHOULDER_R_S Segment {
 			      mass 1
@@ -571,6 +631,9 @@ DEF JVRC Humanoid {
 			      jointId 20
 			      ulimit [ 1.5707963267948966] #+90
 			      llimit [-1.5707963267948966] #-90
+		      	      uvlimit [ 4.18879]
+		      	      lvlimit [-4.18879]
+		      	      rotorInertia 0.1231
 			      children [
 			        DEF R_SHOULDER_Y_S Segment {
 				  mass 2
@@ -587,6 +650,9 @@ DEF JVRC Humanoid {
 				  translation 0.004 0 -0.305
 				  ulimit [0] #+0
 				  llimit [-2.5307274153917776] #-145
+				  uvlimit [ 9.42477]
+				  lvlimit [-9.42477]
+				  rotorInertia 0.1054
 				  children [
 				    DEF R_ELBOW_P_S Segment {
 				      mass 1
@@ -603,6 +669,9 @@ DEF JVRC Humanoid {
 				      translation -0.004 0 -0.239
 				      ulimit [ 1.9198621771937625] #+110
 				      llimit [-1.9198621771937625] #-110
+				      uvlimit [ 3.66519]
+				      lvlimit [-3.66519]
+				      rotorInertia 0.1240
 				      children [
 				        DEF R_ELBOW_Y_S Segment {
 					  mass 1
@@ -617,6 +686,9 @@ DEF JVRC Humanoid {
 					  jointId 23
 					  ulimit [ 1.9198621771937625] #+110
 					  llimit [-1.9198621771937625] #-110
+					  uvlimit [ 5.75958]
+					  lvlimit [-5.75958]
+					  rotorInertia 0.0876
 					  children [
 					    DEF R_WRIST_R_S Segment {
 					      mass 0.5
@@ -628,6 +700,9 @@ DEF JVRC Humanoid {
 					      jointId 24
 					      ulimit [ 2.6179938779914944] #+150
 					      llimit [-2.6179938779914944] #-150
+					      uvlimit [ 3.66519]
+					      lvlimit [-3.66519]
+					      rotorInertia 0.1240
 					      children [
 					        DEF R_WRIST_Y_S Segment {
 						  mass 0.5
@@ -644,6 +719,9 @@ DEF JVRC Humanoid {
 						  translation 0 0.023 -0.084
 						  ulimit [0] #+0
 						  llimit [-0.7853981633974483] #-45
+						  uvlimit [ 6.80678]
+						  uvlimit [-6.80678]
+						  rotorInertia 0.0130
 						  children [
 						    DEF R_UTHUMB_S Segment {
 						      mass 0.2
@@ -660,6 +738,9 @@ DEF JVRC Humanoid {
 						      translation 0 0 -0.045
 						      ulimit [0] #+0
 						      llimit [-1.5707963267948966] #-90
+						      uvlimit [ 13.6135]
+						      lvlimit [-13.6135]
+						      rotorInertia 0.032
 						      children [
 						        DEF R_LTHUMB_S Segment {
 							  mass 0.2
@@ -680,6 +761,9 @@ DEF JVRC Humanoid {
 						  translation 0.025 -0.006 -0.102
 						  ulimit [1.5707963267948966] #+90
 						  llimit [0] #-0
+						  uvlimit [ 9.42477]
+						  uvlimit [-9.42477]
+						  rotorInertia 0.0073
 						  children [
 						    DEF R_UINDEX_S Segment {
 						      mass 0.2
@@ -696,6 +780,9 @@ DEF JVRC Humanoid {
 						      translation 0 0 -0.045
 						      ulimit [1.5707963267948966] #+90
 						      llimit [0] #-0
+						      uvlimit [ 5.75958]
+						      lvlimit [-5.75958]
+						      rotorInertia 0.0039
 						      children [
 						        DEF R_LINDEX_S Segment {
 							  mass 0.2
@@ -716,6 +803,10 @@ DEF JVRC Humanoid {
 						  translation -0.025 -0.006 -0.102
 						  ulimit [1.5707963267948966] #+90
 						  llimit [0] #-0
+
+						  uvlimit [ 9.42477]
+						  uvlimit [-9.42477]
+						  rotorInertia 0.0073
 						  children [
 						    DEF R_ULITTLE_S Segment {
 						      mass 0.2
@@ -732,6 +823,9 @@ DEF JVRC Humanoid {
 						      translation 0 0 -0.045
 						      ulimit [1.5707963267948966] #+90
 						      llimit [0] #-0
+						      uvlimit [ 5.75958]
+						      lvlimit [-5.75958]
+						      rotorInertia 0.0039
 						      children [
 						        DEF R_LLITTLE_S Segment {
 							  mass 0.2
@@ -766,6 +860,9 @@ DEF JVRC Humanoid {
 		      translation 0 0.24 0.33
 		      ulimit [1.0471975511965976] #+60
 		      llimit [-3.141592653589793] #-180
+		      uvlimit [ 8.90117]
+		      lvlimit [-8.90117]
+		      rotorInertia 0.1210
 		      children [
 		        DEF L_SHOULDER_P_S Segment {
 			  mass 1
@@ -780,6 +877,9 @@ DEF JVRC Humanoid {
 			  jointId 32
 			  ulimit [1.7453292519943295] #+100
 			  llimit [-0.17453292519943295] #-10
+		      	  uvlimit [ 8.90117]
+		      	  lvlimit [-8.90117]
+		      	  rotorInertia 0.1210
 			  children [
 			    DEF L_SHOULDER_R_S Segment {
 			      mass 1
@@ -791,6 +891,9 @@ DEF JVRC Humanoid {
 			      jointId 33
 			      ulimit [ 1.5707963267948966] #+90
 			      llimit [-1.5707963267948966] #-90
+		      	      uvlimit [ 4.18879]
+		      	      lvlimit [-4.18879]
+		      	      rotorInertia 0.1231
 			      children [
 			        DEF L_SHOULDER_Y_S Segment {
 				  mass 2
@@ -807,6 +910,9 @@ DEF JVRC Humanoid {
 				  translation 0.004 0 -0.305
 				  ulimit [0] #+0
 				  llimit [-2.5307274153917776] #-145
+				  uvlimit [ 9.42477]
+				  lvlimit [-9.42477]
+				  rotorInertia 0.1054
 				  children [
 				    DEF L_ELBOW_P_S Segment {
 				      mass 1
@@ -823,6 +929,9 @@ DEF JVRC Humanoid {
 				      translation -0.004 0 -0.239
 				      ulimit [ 1.9198621771937625] #+110
 				      llimit [-1.9198621771937625] #-110
+				      uvlimit [ 3.66519]
+				      lvlimit [-3.66519]
+				      rotorInertia 0.1240
 				      children [
 				        DEF L_ELBOW_Y_S Segment {
 					  mass 1
@@ -837,6 +946,9 @@ DEF JVRC Humanoid {
 					  jointId 36
 					  ulimit [ 1.9198621771937625] #+110
 					  llimit [-1.9198621771937625] #-110
+					  uvlimit [ 5.75958]
+					  lvlimit [-5.75958]
+					  rotorInertia 0.0876
 					  children [
 					    DEF L_WRIST_R_S Segment {
 					      mass 0.5
@@ -848,6 +960,9 @@ DEF JVRC Humanoid {
 					      jointId 37
 					      ulimit [ 2.6179938779914944] #+150
 					      llimit [-2.6179938779914944] #-150
+					      uvlimit [ 3.66519]
+					      lvlimit [-3.66519]
+					      rotorInertia 0.1240
 					      children [
 					        DEF L_WRIST_Y_S Segment {
 						  mass 0.5
@@ -864,6 +979,9 @@ DEF JVRC Humanoid {
 						  translation 0 -0.023 -0.084
 						  ulimit [0.7853981633974483] #+45
 						  llimit [-0] #-0
+						  uvlimit [ 6.80678]
+						  uvlimit [-6.80678]
+						  rotorInertia 0.0130
 						  children [
 						    DEF L_UTHUMB_S Segment {
 						      mass 0.2
@@ -880,6 +998,9 @@ DEF JVRC Humanoid {
 						      translation 0 0 -0.045
 						      ulimit [1.5707963267948966] #+90
 						      llimit [-0] #-0
+						      uvlimit [ 13.6135]
+						      lvlimit [-13.6135]
+						      rotorInertia 0.032
 						      children [
 						        DEF L_LTHUMB_S Segment {
 							  mass 0.2
@@ -900,6 +1021,9 @@ DEF JVRC Humanoid {
 						  translation 0.025 0.006 -0.102
 						  ulimit [0] #+0
 						  llimit [1.5707963267948966] #-90
+						  uvlimit [ 9.42477]
+						  uvlimit [-9.42477]
+						  rotorInertia 0.0073
 						  children [
 						    DEF L_UINDEX_S Segment {
 						      mass 0.2
@@ -916,6 +1040,9 @@ DEF JVRC Humanoid {
 						      translation 0 0 -0.045
 						      ulimit [0] #+0
 						      llimit [1.5707963267948966] #-90
+						      uvlimit [ 5.75958]
+						      lvlimit [-5.75958]
+						      rotorInertia 0.0039
 						      children [
 						        DEF L_LINDEX_S Segment {
 							  mass 0.2
@@ -936,6 +1063,9 @@ DEF JVRC Humanoid {
 						  translation -0.025 0.006 -0.102
 						  ulimit [0] #+0
 						  llimit [1.5707963267948966] #-90
+						  uvlimit [ 9.42477]
+						  uvlimit [-9.42477]
+						  rotorInertia 0.0073
 						  children [
 						    DEF L_ULITTLE_S Segment {
 						      mass 0.2
@@ -952,6 +1082,9 @@ DEF JVRC Humanoid {
 						      translation 0 0 -0.045
 						      ulimit [0] #+0
 						      llimit [1.5707963267948966] #-90
+						      uvlimit [ 5.75958]
+						      lvlimit [-5.75958]
+						      rotorInertia 0.0039
 						      children [
 						        DEF L_LLITTLE_S Segment {
 							  mass 0.2
