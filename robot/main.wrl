@@ -225,7 +225,7 @@ Viewpoint {
   orientation 0.5770 0.5775 0.5775 2.0935
 }
 
-DEF JVRC Humanoid {
+DEF JVRC-1 Humanoid {
   humanoidBody [
     DEF PELVIS Joint {
       jointType "free"
@@ -353,6 +353,9 @@ DEF JVRC Humanoid {
 				    Inline { url "rfoot.wrl" }
 				  ]
 				}
+				DEF rfsensor ForceSensor {
+				  sensorId 0
+				}
 			      ]
 			    } # R_ANKLE_P
 			  ]
@@ -473,6 +476,9 @@ DEF JVRC Humanoid {
 				    Inline { url "lfoot.wrl" }
 				  ]
 				}
+				DEF lfsensor ForceSensor {
+				  sensorId 1
+				}
 			      ]
 			    } # L_ANKLE_P
 			  ]
@@ -587,6 +593,36 @@ DEF JVRC Humanoid {
 				    Inline { url "head.wrl" }
 				  ]
 				}
+				DEF rcamera VisionSensor {
+				  translation 0.1 -0.03 0.09
+				  rotation      0.4472 -0.4472 -0.7746 1.8235
+				  frontClipDistance 0.05
+				  width 640
+				  height 480
+				  type "COLOR"
+				  sensorId 0
+				  fieldOfView 1.0
+				} 
+				DEF lcamera VisionSensor {
+				  translation 0.1 0.03 0.09
+				  rotation      0.4472 -0.4472 -0.7746 1.8235
+				  frontClipDistance 0.05
+				  width 640
+				  height 480
+				  type "COLOR"
+				  sensorId 1
+				  fieldOfView 1.0
+				} 
+				DEF ranger RangeSensor {
+				  translation 0.1 0.0 0.0
+				  rotation      0.4472 -0.4472 -0.7746 1.8235
+				  sensorId 0
+				  scanAngle 1.5707963267948966
+				  scanStep 0.011344640137963142
+				  scanRate 100
+				  minDistance 0.1
+				  maxDistance 30.0
+				} 
 			      ]
 			    } # NECK_P
 			  ]
@@ -704,6 +740,9 @@ DEF JVRC Humanoid {
 					      lvlimit [-3.66519]
 					      rotorInertia 0.1240
 					      children [
+					        DEF rhsensor ForceSensor {
+						  sensorId 2
+						}
 					        DEF R_WRIST_Y_S Segment {
 						  mass 0.5
 						  centerOfMass 0 0.01 -0.06
@@ -964,6 +1003,9 @@ DEF JVRC Humanoid {
 					      lvlimit [-3.66519]
 					      rotorInertia 0.1240
 					      children [
+					        DEF lhsensor ForceSensor {
+						  sensorId 3
+						}
 					        DEF L_WRIST_Y_S Segment {
 						  mass 0.5
 						  centerOfMass 0 -0.01 -0.06
