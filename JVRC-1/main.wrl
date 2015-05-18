@@ -1062,7 +1062,7 @@ DEF JVRC-1 Humanoid {
 						  jointId 40
 						  translation 0.025 0.006 -0.102
 						  ulimit [0] #+0
-						  llimit [1.5707963267948966] #-90
+						  llimit [-1.5707963267948966] #-90
 						  uvlimit [ 9.42477]
 						  uvlimit [-9.42477]
 						  rotorInertia 0.0073
@@ -1081,7 +1081,7 @@ DEF JVRC-1 Humanoid {
 						      jointId 41
 						      translation 0 0 -0.045
 						      ulimit [0] #+0
-						      llimit [1.5707963267948966] #-90
+						      llimit [-1.5707963267948966] #-90
 						      uvlimit [ 5.75958]
 						      lvlimit [-5.75958]
 						      rotorInertia 0.0039
@@ -1104,7 +1104,7 @@ DEF JVRC-1 Humanoid {
 						  jointId 42
 						  translation -0.025 0.006 -0.102
 						  ulimit [0] #+0
-						  llimit [1.5707963267948966] #-90
+						  llimit [-1.5707963267948966] #-90
 						  uvlimit [ 9.42477]
 						  uvlimit [-9.42477]
 						  rotorInertia 0.0073
@@ -1123,7 +1123,7 @@ DEF JVRC-1 Humanoid {
 						      jointId 43
 						      translation 0 0 -0.045
 						      ulimit [0] #+0
-						      llimit [1.5707963267948966] #-90
+						      llimit [-1.5707963267948966] #-90
 						      uvlimit [ 5.75958]
 						      lvlimit [-5.75958]
 						      rotorInertia 0.0039
