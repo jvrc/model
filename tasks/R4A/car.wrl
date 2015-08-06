@@ -3368,7 +3368,7 @@ Shape {
 Shape {
 	appearance Appearance {
 		texture ImageTexture {
-			url [ "_9.jpg" "_9.jpg" "C:\Users\fumio\Google ドライブ\wrl\R4A\_9.jpg" ]
+			url [ "_9.jpg" "_9.jpg" "_9.jpg" ]
 		}
 	}
 	geometry IndexedFaceSet {
@@ -4855,7 +4855,7 @@ Shape {
 Shape {
 	appearance Appearance {
 		texture ImageTexture {
-			url [ "_9.jpg" "_9.jpg" "C:\Users\fumio\Google ドライブ\wrl\R4A\_9.jpg" ]
+			url [ "_9.jpg" "_9.jpg" "_9.jpg" ]
 		}
 	}
 	geometry IndexedFaceSet {
