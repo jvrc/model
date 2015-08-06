@@ -103,15 +103,15 @@ PROTO ExtraJoint [
 {
 }
 
-DEF R5_deblis5 Humanoid {
+DEF debris5 Humanoid {
   humanoidBody [
-    DEF R5_deblis5 Joint {
+    DEF debris5 Joint {
       jointType "free"
       jointId 0
       translation 0.02 0.0 0.001
       rotation 0 1 0 0
       children [
-        DEF R5_deblis5 Segment {
+        DEF debris5 Segment {
           mass 2.0
           centerOfMass 4.30622 12.70171 0.938
           momentsOfInertia [0.61593456 -6.85e-06 0.10370488 -6.85e-06 0.67269409 1e-06 0.10370488 1e-06 0.06282167]
@@ -122,7 +122,7 @@ DEF R5_deblis5 Humanoid {
               rotation 0 1 0 0
               children [
                 Inline {
-                  url "deblis5-visual.wrl"
+                  url "debris5-visual.wrl"
                 }
               ]
             }
@@ -136,6 +136,6 @@ DEF R5_deblis5 Humanoid {
   ]
   segments [
   ]
-  name "R5_deblis5"
+  name "debris5"
   version "1.0"
 }

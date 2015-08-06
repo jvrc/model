@@ -103,10 +103,10 @@ PROTO ExtraJoint [
 {
 }
 
-DEF R4A_door0.7 Humanoid {
+DEF door Humanoid {
   humanoidBody [
     DEF R4A_door0.7 Joint {
-      jointType "free"
+      jointType "fixed"
       jointId 0
       translation 0.0 0.0 0.0
       rotation 0 1 0 0

@@ -103,7 +103,7 @@ PROTO ExtraJoint [
 {
 }
 
-DEF R4A_wall Humanoid {
+DEF spreader Humanoid {
   humanoidBody [
     DEF R4A_wall Joint {
       jointType "free"
