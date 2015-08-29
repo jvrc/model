@@ -122,7 +122,7 @@ DEF R1M_target8 Humanoid {
               rotation 0 1 0 0
               children [
                 Inline {
-                  url "Task_R1M-R1M_target8-Task_R1M-visual.wrl"
+                  url "target8-visual.wrl"
                 }
               ]
             }
