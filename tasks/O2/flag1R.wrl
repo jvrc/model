@@ -81,7 +81,7 @@ Shape {
 Shape {
 	appearance Appearance {
 		texture ImageTexture {
-			url [ "1.png.002.jpg" "1.png.002.jpg" "/home/kanehiro/src/jvrc-model/tasks/O2/1.png.002.jpg" ]
+			url [ "1.png.002.jpg" ]
 		}
 	}
 	geometry IndexedFaceSet {
