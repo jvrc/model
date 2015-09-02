@@ -5,7 +5,7 @@
 Shape {
 	appearance Appearance {
 		texture ImageTexture {
-			url [ "romenR01.jpg" "romenR01.jpg" "/home/kanehiro/src/jvrc-model/tasks/R2M/romenR01.jpg" ]
+			url [ "romenR01.jpg" ]
 		}
 	}
 	geometry IndexedFaceSet {
