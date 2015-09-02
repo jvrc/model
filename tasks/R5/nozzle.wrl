@@ -58,6 +58,24 @@ PROTO Segment [
   }
 }
 
+PROTO Surface [
+ field   SFVec3f bboxCenter 0 0 0
+ field   SFVec3f bboxSize   -1 -1 -1
+ field   MFNode  visual     [ ]
+ field   MFNode  collision  [ ]
+ eventIn MFNode  addChildren
+ eventIn MFNode  removeChildren
+]
+{
+  Group {
+    addChildren    IS addChildren
+    bboxCenter     IS bboxCenter
+    bboxSize       IS bboxSize
+    children       IS visual
+    removeChildren IS removeChildren
+  }
+}
+
 PROTO Humanoid [
   field           SFVec3f    bboxCenter            0 0 0
   field           SFVec3f    bboxSize              -1 -1 -1
@@ -103,18 +121,19 @@ PROTO ExtraJoint [
 {
 }
 
-DEF R6_valbu Humanoid {
+
+
+DEF nozzle Humanoid {
   humanoidBody [
-    DEF R6_valbu Joint {
+    DEF nozzle Joint {
       jointType "free"
-      jointId 0
-      translation 0.0 0.0 0.0
+      translation 0.03 0.0 -0.75
       rotation 0 1 0 0
       children [
-        DEF R6_valbu Segment {
-          mass 0
-          centerOfMass 0 0 0
-          momentsOfInertia [1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]
+        DEF nozzle Segment {
+          mass 0.5
+          centerOfMass 0.537751 7.10173 2.1984
+          momentsOfInertia [0.118401 0.0 0.0 0.0 0.00404786 -0.00097855 0.0 -0.00097855 0.118282]
           children [
             Transform {
               scale 1 1 1
@@ -122,7 +141,7 @@ DEF R6_valbu Humanoid {
               rotation 0 1 0 0
               children [
                 Inline {
-                  url "Task_R6_valbu-R6_valbu-Task_R6_valbu-visual.wrl"
+                  url "nozzle-visual.wrl"
                 }
               ]
             }
@@ -134,8 +153,7 @@ DEF R6_valbu Humanoid {
   ]
   joints [
   ]
-  segments [
-  ]
-  name "R6_valbu"
+  
+  name "nozzle"
   version "1.0"
 }
