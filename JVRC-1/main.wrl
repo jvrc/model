@@ -342,7 +342,7 @@ DEF JVRC-1 Humanoid {
 			      ulimit [0.9599310885968813] #+55
 			      llimit [-1.4835298641951802] #-85
 			      uvlimit [ 14.18435]
-			      uvlimit [-14.18435]
+			      lvlimit [-14.18435]
 			      rotorInertia 0.1337
 			      children [
 			        DEF R_ANKLE_P_S Segment {
@@ -499,7 +499,7 @@ DEF JVRC-1 Humanoid {
 	  ulimit [ 0.7853981633974483] #+45
 	  llimit [-0.7853981633974483] #-45
 	  uvlimit [ 8.90117]
-	  uvlimit [-8.90117]
+	  lvlimit [-8.90117]
 	  rotorInertia 0.1221
 	  children [
 	    DEF WAIST_Y_S Segment {
@@ -759,7 +759,7 @@ DEF JVRC-1 Humanoid {
 						  ulimit [0] #+0
 						  llimit [-0.7853981633974483] #-45
 						  uvlimit [ 6.80678]
-						  uvlimit [-6.80678]
+						  lvlimit [-6.80678]
 						  rotorInertia 0.0130
 						  children [
 						    DEF R_UTHUMB_S Segment {
@@ -801,7 +801,7 @@ DEF JVRC-1 Humanoid {
 						  ulimit [1.5707963267948966] #+90
 						  llimit [0] #-0
 						  uvlimit [ 9.42477]
-						  uvlimit [-9.42477]
+						  lvlimit [-9.42477]
 						  rotorInertia 0.0073
 						  children [
 						    DEF R_UINDEX_S Segment {
@@ -844,7 +844,7 @@ DEF JVRC-1 Humanoid {
 						  llimit [0] #-0
 
 						  uvlimit [ 9.42477]
-						  uvlimit [-9.42477]
+						  lvlimit [-9.42477]
 						  rotorInertia 0.0073
 						  children [
 						    DEF R_ULITTLE_S Segment {
@@ -1022,7 +1022,7 @@ DEF JVRC-1 Humanoid {
 						  ulimit [0.7853981633974483] #+45
 						  llimit [-0] #-0
 						  uvlimit [ 6.80678]
-						  uvlimit [-6.80678]
+						  lvlimit [-6.80678]
 						  rotorInertia 0.0130
 						  children [
 						    DEF L_UTHUMB_S Segment {
@@ -1064,7 +1064,7 @@ DEF JVRC-1 Humanoid {
 						  ulimit [0] #+0
 						  llimit [-1.5707963267948966] #-90
 						  uvlimit [ 9.42477]
-						  uvlimit [-9.42477]
+						  lvlimit [-9.42477]
 						  rotorInertia 0.0073
 						  children [
 						    DEF L_UINDEX_S Segment {
@@ -1106,7 +1106,7 @@ DEF JVRC-1 Humanoid {
 						  ulimit [0] #+0
 						  llimit [-1.5707963267948966] #-90
 						  uvlimit [ 9.42477]
-						  uvlimit [-9.42477]
+						  lvlimit [-9.42477]
 						  rotorInertia 0.0073
 						  children [
 						    DEF L_ULITTLE_S Segment {
