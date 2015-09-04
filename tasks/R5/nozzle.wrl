@@ -127,7 +127,7 @@ DEF nozzle Humanoid {
   humanoidBody [
     DEF nozzle Joint {
       jointType "free"
-      translation 0.03 0.0 -0.75
+      translation 0.03 0.0 -0.74
       rotation 0 1 0 0
       children [
         DEF nozzle Segment {
