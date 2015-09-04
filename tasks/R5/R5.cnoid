@@ -72,13 +72,13 @@ items:
           data: 
             modelFile: "nozzle.wrl"
             currentBaseLink: ""
-            rootPosition: [ 0.03, 0, -0.75 ]
+            rootPosition: [ 0.03, 0, -0.74 ]
             rootAttitude: [ 
               1, 0, 0, 
               0, 1, 0, 
               0, 0, 1 ]
             jointPositions: [  ]
-            initialRootPosition: [ 0.03, 0, -0.75 ]
+            initialRootPosition: [ 0.03, 0, -0.74 ]
             initialRootAttitude: [ 
               1, 0, 0, 
               0, 1, 0, 
