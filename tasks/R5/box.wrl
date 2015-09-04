@@ -155,7 +155,7 @@ DEF box Humanoid {
           translation 0.685 7.24 1.0475
           rotation 0 1 0 0
           ulimit 1.54
-          llimit 0.2
+          llimit 0.0
           children [
             DEF door Segment {
               mass 0.5
