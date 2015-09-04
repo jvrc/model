@@ -168,6 +168,11 @@ DEF box Humanoid {
                   rotation 0 1 0 0
                   children [
                     Shape {
+                      appearance Appearance {
+                        material Material {
+                          diffuseColor 1.0 0.0 0.0
+                        }
+                      }
                       geometry Box {
                         size 0.01 0.91 0.495
                       }
@@ -179,7 +184,7 @@ DEF box Humanoid {
                 
             DEF hinge_doorknob Joint {
               jointType "rotate"
-              jointAxis 1.0 0.0 0.0
+              jointAxis -1.0 0.0 0.0
               jointId 0
               translation 0.005 -0.0019 0.4865
               rotation 0 1 0 0
