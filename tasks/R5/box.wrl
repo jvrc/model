@@ -164,17 +164,34 @@ DEF box Humanoid {
               children [
                 Transform {
                   scale 1.0 1.0 1.0
-                  translation 1.11022302463e-16 0.0 0.2495
+                  translation 0.0025 0.0 0.2495
                   rotation 0 1 0 0
                   children [
                     Shape {
                       appearance Appearance {
                         material Material {
-                          diffuseColor 1.0 0.0 0.0
+                          diffuseColor 0.8 0.0 0.0
                         }
                       }
                       geometry Box {
-                        size 0.01 0.91 0.495
+                        size 0.005 0.91 0.495
+                      }
+                    }
+                  ]
+                }
+                Transform {
+                  scale 1.0 1.0 1.0
+                  translation -0.0025 0.0 0.2495
+                  rotation 0 1 0 0
+                  children [
+                    Shape {
+                      appearance Appearance {
+                        material Material {
+                          diffuseColor 0.8 0.8 0.8
+                        }
+                      }
+                      geometry Box {
+                        size 0.005 0.91 0.495
                       }
                     }
                   ]
@@ -239,7 +256,6 @@ DEF box Humanoid {
                 }
               ]
             }
-                
           ]
         }
       ]
