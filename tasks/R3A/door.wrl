@@ -58,6 +58,24 @@ PROTO Segment [
   }
 }
 
+PROTO Surface [
+ field   SFVec3f bboxCenter 0 0 0
+ field   SFVec3f bboxSize   -1 -1 -1
+ field   MFNode  visual     [ ]
+ field   MFNode  collision  [ ]
+ eventIn MFNode  addChildren
+ eventIn MFNode  removeChildren
+]
+{
+  Group {
+    addChildren    IS addChildren
+    bboxCenter     IS bboxCenter
+    bboxSize       IS bboxSize
+    children       IS visual
+    removeChildren IS removeChildren
+  }
+}
+
 PROTO Humanoid [
   field           SFVec3f    bboxCenter            0 0 0
   field           SFVec3f    bboxSize              -1 -1 -1
@@ -116,15 +134,9 @@ DEF door Humanoid {
           centerOfMass 5.016562 9.609056 1.323376
           momentsOfInertia [0.051214 0.000431 1.7e-05 0.000431 0.015529 -0.000694 1.7e-05 -0.000694 0.037332]
           children [
-            Transform {
-              scale 1 1 1
-              translation 0 0 0
-              rotation 0 1 0 0
-              children [
-                Inline {
-                  url "door-visual.wrl"
-                }
-              ]
+	    Surface {
+	      visual [ Inline { url "door-visual.wrl" } ]
+	      collision [ Inline { url "door-collision.wrl" } ]
             }
           ]
         }
