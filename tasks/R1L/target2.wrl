@@ -58,6 +58,24 @@ PROTO Segment [
   }
 }
 
+PROTO Surface [
+ field   SFVec3f bboxCenter 0 0 0
+ field   SFVec3f bboxSize   -1 -1 -1
+ field   MFNode  visual     [ ]
+ field   MFNode  collision  [ ]
+ eventIn MFNode  addChildren
+ eventIn MFNode  removeChildren
+]
+{
+  Group {
+    addChildren    IS addChildren
+    bboxCenter     IS bboxCenter
+    bboxSize       IS bboxSize
+    children       IS visual
+    removeChildren IS removeChildren
+  }
+}
+
 PROTO Humanoid [
   field           SFVec3f    bboxCenter            0 0 0
   field           SFVec3f    bboxSize              -1 -1 -1
@@ -103,13 +121,14 @@ PROTO ExtraJoint [
 {
 }
 
+
+
 DEF R1L_target2 Humanoid {
   humanoidBody [
     DEF R1L_target2 Joint {
       jointType "fixed"
-      jointId 0
-      translation 5.812 13.783 2.598
-      rotation -0.0 1.0 -0.0 0.9
+      translation 5.838 8.836 0.755
+      rotation 7.33016724921e-07 0.999999999999 7.33016724921e-07 2.29999965359
       children [
         DEF R1L_target2 Segment {
           mass 0
@@ -117,7 +136,7 @@ DEF R1L_target2 Humanoid {
           momentsOfInertia [1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]
           children [
             Transform {
-              scale 20.0 20.0 4.0
+              scale 14.0 14.0 5.0
               translation 0 0 0
               rotation 0 1 0 0
               children [
@@ -134,8 +153,7 @@ DEF R1L_target2 Humanoid {
   ]
   joints [
   ]
-  segments [
-  ]
+  
   name "R1L_target2"
   version "1.0"
 }
