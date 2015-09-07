@@ -65,29 +65,6 @@ items:
             selfCollisionDetection: false
             isEditable: true
         - 
-          id: 4
-          name: "target8"
-          plugin: Body
-          class: BodyItem
-          data: 
-            modelFile: "target8.wrl"
-            currentBaseLink: ""
-            rootPosition: [ 0.503, 6.347, 2.377 ]
-            rootAttitude: [ 
-              -0.128844494, 0, 0.99166481, 
-              0, 1, 0, 
-              -0.99166481, 0, -0.128844494 ]
-            jointPositions: [  0.000000 ]
-            initialRootPosition: [ 0.503, 6.347, 2.377 ]
-            initialRootAttitude: [ 
-              -0.128844494, 0, 0.99166481, 
-              0, 1, 0, 
-              -0.99166481, 0, -0.128844494 ]
-            zmp: [ 0, 0, 0 ]
-            collisionDetection: true
-            selfCollisionDetection: false
-            isEditable: true
-        - 
           id: 5
           name: "wall"
           plugin: Body
@@ -106,29 +83,6 @@ items:
               1, 0, 0, 
               0, 1, 0, 
               0, 0, 1 ]
-            zmp: [ 0, 0, 0 ]
-            collisionDetection: true
-            selfCollisionDetection: false
-            isEditable: true
-        - 
-          id: 6
-          name: "target9"
-          plugin: Body
-          class: BodyItem
-          data: 
-            modelFile: "target9.wrl"
-            currentBaseLink: ""
-            rootPosition: [ 0.415, 6.607, 1.688 ]
-            rootAttitude: [ 
-              -0.128844494, 0, 0.99166481, 
-              0, 1, 0, 
-              -0.99166481, 0, -0.128844494 ]
-            jointPositions: [  0.000000 ]
-            initialRootPosition: [ 0.415, 6.607, 1.688 ]
-            initialRootAttitude: [ 
-              -0.128844494, 0, 0.99166481, 
-              0, 1, 0, 
-              -0.99166481, 0, -0.128844494 ]
             zmp: [ 0, 0, 0 ]
             collisionDetection: true
             selfCollisionDetection: false
@@ -244,29 +198,6 @@ items:
               0.228752808, 0, 0.973484542, 
               0, 1, 0, 
               -0.973484542, 0, 0.228752808 ]
-            zmp: [ 0, 0, 0 ]
-            collisionDetection: true
-            selfCollisionDetection: false
-            isEditable: true
-        - 
-          id: 12
-          name: "target7"
-          plugin: Body
-          class: BodyItem
-          data: 
-            modelFile: "target7.wrl"
-            currentBaseLink: ""
-            rootPosition: [ 0.623, 5.357, 2.989 ]
-            rootAttitude: [ 
-              -0.275590247, 0, 0.961275203, 
-              0, 1, 0, 
-              -0.961275203, 0, -0.275590247 ]
-            jointPositions: [  0.000000 ]
-            initialRootPosition: [ 0.623, 5.357, 2.989 ]
-            initialRootAttitude: [ 
-              -0.275590247, 0, 0.961275203, 
-              0, 1, 0, 
-              -0.961275203, 0, -0.275590247 ]
             zmp: [ 0, 0, 0 ]
             collisionDetection: true
             selfCollisionDetection: false
