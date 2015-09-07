@@ -141,7 +141,7 @@ DEF box Humanoid {
               rotation 0 1 0 0
               children [
                 Inline {
-                  url "box-visual.wrl"
+                  url "shape/box-visual.wrl"
                 }
               ]
             }
@@ -219,7 +219,7 @@ DEF box Humanoid {
                       rotation 0 1 0 0
                       children [
                         Inline {
-                          url "doorknob-visual.wrl"
+                          url "shape/doorknob-visual.wrl"
                         }
                       ]
                     }
@@ -250,7 +250,7 @@ DEF box Humanoid {
                   rotation 0 1 0 0
                   children [
                     Inline {
-                      url "valve-visual.wrl"
+                      url "shape/valve-visual.wrl"
                     }
                   ]
                 }

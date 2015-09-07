@@ -129,8 +129,8 @@ DEF fin Humanoid {
         DEF fin Segment {
           children [
 	    Surface {
-	      visual [ Inline { url "fin-visual.wrl" } ]
-	      collision [ Inline { url "fin-collision.wrl" } ]
+	      visual [ Inline { url "shape/fin-visual.wrl" } ]
+	      collision [ Inline { url "shape/fin-collision.wrl" } ]
 	    }
           ]
         }

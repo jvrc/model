@@ -153,7 +153,7 @@ DEF hose Humanoid {
                   rotation 0 1 0 0
                   children [
                     Inline {
-                      url "L11ND-visual.wrl"
+                      url "shape/L11ND-visual.wrl"
                     }
                   ]
                 }
@@ -180,7 +180,7 @@ DEF hose Humanoid {
                       rotation 0 1 0 0
                       children [
                         Inline {
-                          url "L11WD-visual.wrl"
+                          url "shape/L11WD-visual.wrl"
                         }
                       ]
                     }
@@ -207,7 +207,7 @@ DEF hose Humanoid {
                           rotation 0 1 0 0
                           children [
                             Inline {
-                              url "L11ND-visual.wrl"
+                              url "shape/L11ND-visual.wrl"
                             }
                           ]
                         }
@@ -234,7 +234,7 @@ DEF hose Humanoid {
                               rotation 0 1 0 0
                               children [
                                 Inline {
-                                  url "L11WD-visual.wrl"
+                                  url "shape/L11WD-visual.wrl"
                                 }
                               ]
                             }
@@ -261,7 +261,7 @@ DEF hose Humanoid {
                                   rotation 0 1 0 0
                                   children [
                                     Inline {
-                                      url "L11ND-visual.wrl"
+                                      url "shape/L11ND-visual.wrl"
                                     }
                                   ]
                                 }
@@ -288,7 +288,7 @@ DEF hose Humanoid {
                                       rotation 0 1 0 0
                                       children [
                                         Inline {
-                                          url "L11WD-visual.wrl"
+                                          url "shape/L11WD-visual.wrl"
                                         }
                                       ]
                                     }
@@ -315,7 +315,7 @@ DEF hose Humanoid {
                                           rotation 0 1 0 0
                                           children [
                                             Inline {
-                                              url "L11ND-visual.wrl"
+                                              url "shape/L11ND-visual.wrl"
                                             }
                                           ]
                                         }
@@ -342,7 +342,7 @@ DEF hose Humanoid {
                                               rotation 0 1 0 0
                                               children [
                                                 Inline {
-                                                  url "L11WD-visual.wrl"
+                                                  url "shape/L11WD-visual.wrl"
                                                 }
                                               ]
                                             }
@@ -369,7 +369,7 @@ DEF hose Humanoid {
                                                   rotation 0 1 0 0
                                                   children [
                                                     Inline {
-                                                      url "L11ND-visual.wrl"
+                                                      url "shape/L11ND-visual.wrl"
                                                     }
                                                   ]
                                                 }
@@ -396,7 +396,7 @@ DEF hose Humanoid {
                                                       rotation 0 1 0 0
                                                       children [
                                                         Inline {
-                                                          url "L11WD-visual.wrl"
+                                                          url "shape/L11WD-visual.wrl"
                                                         }
                                                       ]
                                                     }
@@ -423,7 +423,7 @@ DEF hose Humanoid {
                                                           rotation 0 1 0 0
                                                           children [
                                                             Inline {
-                                                              url "L11ND-visual.wrl"
+                                                              url "shape/L11ND-visual.wrl"
                                                             }
                                                           ]
                                                         }
@@ -450,7 +450,7 @@ DEF hose Humanoid {
                                                               rotation 0 1 0 0
                                                               children [
                                                                 Inline {
-                                                                  url "L11WD-visual.wrl"
+                                                                  url "shape/L11WD-visual.wrl"
                                                                 }
                                                               ]
                                                             }
@@ -477,7 +477,7 @@ DEF hose Humanoid {
                                                                   rotation 0 1 0 0
                                                                   children [
                                                                     Inline {
-                                                                      url "L11ND-visual.wrl"
+                                                                      url "shape/L11ND-visual.wrl"
                                                                     }
                                                                   ]
                                                                 }
@@ -504,7 +504,7 @@ DEF hose Humanoid {
                                                                       rotation 0 1 0 0
                                                                       children [
                                                                         Inline {
-                                                                          url "L11WD-visual.wrl"
+                                                                          url "shape/L11WD-visual.wrl"
                                                                         }
                                                                       ]
                                                                     }
@@ -531,7 +531,7 @@ DEF hose Humanoid {
                                                                           rotation 0 1 0 0
                                                                           children [
                                                                             Inline {
-                                                                              url "L11ND-visual.wrl"
+                                                                              url "shape/L11ND-visual.wrl"
                                                                             }
                                                                           ]
                                                                         }
@@ -558,7 +558,7 @@ DEF hose Humanoid {
                                                                               rotation 0 1 0 0
                                                                               children [
                                                                                 Inline {
-                                                                                  url "L11WD-visual.wrl"
+                                                                                  url "shape/L11WD-visual.wrl"
                                                                                 }
                                                                               ]
                                                                             }
@@ -585,7 +585,7 @@ DEF hose Humanoid {
                                                                                   rotation 0 1 0 0
                                                                                   children [
                                                                                     Inline {
-                                                                                      url "L11ND-visual.wrl"
+                                                                                      url "shape/L11ND-visual.wrl"
                                                                                     }
                                                                                   ]
                                                                                 }
@@ -612,7 +612,7 @@ DEF hose Humanoid {
                                                                                       rotation 0 1 0 0
                                                                                       children [
                                                                                         Inline {
-                                                                                          url "L11WD-visual.wrl"
+                                                                                          url "shape/L11WD-visual.wrl"
                                                                                         }
                                                                                       ]
                                                                                     }
@@ -639,7 +639,7 @@ DEF hose Humanoid {
                                                                                           rotation 0 1 0 0
                                                                                           children [
                                                                                             Inline {
-                                                                                              url "L11ND-visual.wrl"
+                                                                                              url "shape/L11ND-visual.wrl"
                                                                                             }
                                                                                           ]
                                                                                         }
@@ -666,7 +666,7 @@ DEF hose Humanoid {
                                                                                               rotation 0 1 0 0
                                                                                               children [
                                                                                                 Inline {
-                                                                                                  url "L11WD-visual.wrl"
+                                                                                                  url "shape/L11WD-visual.wrl"
                                                                                                 }
                                                                                               ]
                                                                                             }
@@ -693,7 +693,7 @@ DEF hose Humanoid {
                                                                                                   rotation 0 1 0 0
                                                                                                   children [
                                                                                                     Inline {
-                                                                                                      url "L11ND-visual.wrl"
+                                                                                                      url "shape/L11ND-visual.wrl"
                                                                                                     }
                                                                                                   ]
                                                                                                 }
@@ -720,7 +720,7 @@ DEF hose Humanoid {
                                                                                                       rotation 0 1 0 0
                                                                                                       children [
                                                                                                         Inline {
-                                                                                                          url "L11WD-visual.wrl"
+                                                                                                          url "shape/L11WD-visual.wrl"
                                                                                                         }
                                                                                                       ]
                                                                                                     }
@@ -747,7 +747,7 @@ DEF hose Humanoid {
                                                                                                           rotation 0 1 0 0
                                                                                                           children [
                                                                                                             Inline {
-                                                                                                              url "L11ND-visual.wrl"
+                                                                                                              url "shape/L11ND-visual.wrl"
                                                                                                             }
                                                                                                           ]
                                                                                                         }
@@ -774,7 +774,7 @@ DEF hose Humanoid {
                                                                                                               rotation 0 1 0 0
                                                                                                               children [
                                                                                                                 Inline {
-                                                                                                                  url "L11WD-visual.wrl"
+                                                                                                                  url "shape/L11WD-visual.wrl"
                                                                                                                 }
                                                                                                               ]
                                                                                                             }
@@ -801,7 +801,7 @@ DEF hose Humanoid {
                                                                                                                   rotation 0 1 0 0
                                                                                                                   children [
                                                                                                                     Inline {
-                                                                                                                      url "L11ND-visual.wrl"
+                                                                                                                      url "shape/L11ND-visual.wrl"
                                                                                                                     }
                                                                                                                   ]
                                                                                                                 }
@@ -828,7 +828,7 @@ DEF hose Humanoid {
                                                                                                                       rotation 0 1 0 0
                                                                                                                       children [
                                                                                                                         Inline {
-                                                                                                                          url "L11WD-visual.wrl"
+                                                                                                                          url "shape/L11WD-visual.wrl"
                                                                                                                         }
                                                                                                                       ]
                                                                                                                     }
@@ -855,7 +855,7 @@ DEF hose Humanoid {
                                                                                                                           rotation 0 1 0 0
                                                                                                                           children [
                                                                                                                             Inline {
-                                                                                                                              url "L11ND-visual.wrl"
+                                                                                                                              url "shape/L11ND-visual.wrl"
                                                                                                                             }
                                                                                                                           ]
                                                                                                                         }
@@ -882,7 +882,7 @@ DEF hose Humanoid {
                                                                                                                               rotation 0 1 0 0
                                                                                                                               children [
                                                                                                                                 Inline {
-                                                                                                                                  url "L11WD-visual.wrl"
+                                                                                                                                  url "shape/L11WD-visual.wrl"
                                                                                                                                 }
                                                                                                                               ]
                                                                                                                             }
@@ -909,7 +909,7 @@ DEF hose Humanoid {
                                                                                                                                   rotation 0 1 0 0
                                                                                                                                   children [
                                                                                                                                     Inline {
-                                                                                                                                      url "L11ND-visual.wrl"
+                                                                                                                                      url "shape/L11ND-visual.wrl"
                                                                                                                                     }
                                                                                                                                   ]
                                                                                                                                 }
@@ -936,7 +936,7 @@ DEF hose Humanoid {
                                                                                                                                       rotation 0 1 0 0
                                                                                                                                       children [
                                                                                                                                         Inline {
-                                                                                                                                          url "L11WD-visual.wrl"
+                                                                                                                                          url "shape/L11WD-visual.wrl"
                                                                                                                                         }
                                                                                                                                       ]
                                                                                                                                     }
@@ -963,7 +963,7 @@ DEF hose Humanoid {
                                                                                                                                           rotation 0 1 0 0
                                                                                                                                           children [
                                                                                                                                             Inline {
-                                                                                                                                              url "L11ND-visual.wrl"
+                                                                                                                                              url "shape/L11ND-visual.wrl"
                                                                                                                                             }
                                                                                                                                           ]
                                                                                                                                         }
@@ -990,7 +990,7 @@ DEF hose Humanoid {
                                                                                                                                               rotation 0 1 0 0
                                                                                                                                               children [
                                                                                                                                                 Inline {
-                                                                                                                                                  url "L11WD-visual.wrl"
+                                                                                                                                                  url "shape/L11WD-visual.wrl"
                                                                                                                                                 }
                                                                                                                                               ]
                                                                                                                                             }
@@ -1017,7 +1017,7 @@ DEF hose Humanoid {
                                                                                                                                                   rotation 0 1 0 0
                                                                                                                                                   children [
                                                                                                                                                     Inline {
-                                                                                                                                                      url "L11ND-visual.wrl"
+                                                                                                                                                      url "shape/L11ND-visual.wrl"
                                                                                                                                                     }
                                                                                                                                                   ]
                                                                                                                                                 }
@@ -1044,7 +1044,7 @@ DEF hose Humanoid {
                                                                                                                                                       rotation 0 1 0 0
                                                                                                                                                       children [
                                                                                                                                                         Inline {
-                                                                                                                                                          url "L11WD-visual.wrl"
+                                                                                                                                                          url "shape/L11WD-visual.wrl"
                                                                                                                                                         }
                                                                                                                                                       ]
                                                                                                                                                     }
@@ -1071,7 +1071,7 @@ DEF hose Humanoid {
                                                                                                                                                           rotation 0 1 0 0
                                                                                                                                                           children [
                                                                                                                                                             Inline {
-                                                                                                                                                              url "L11ND-visual.wrl"
+                                                                                                                                                              url "shape/L11ND-visual.wrl"
                                                                                                                                                             }
                                                                                                                                                           ]
                                                                                                                                                         }
@@ -1098,7 +1098,7 @@ DEF hose Humanoid {
                                                                                                                                                               rotation 0 1 0 0
                                                                                                                                                               children [
                                                                                                                                                                 Inline {
-                                                                                                                                                                  url "L11WD-visual.wrl"
+                                                                                                                                                                  url "shape/L11WD-visual.wrl"
                                                                                                                                                                 }
                                                                                                                                                               ]
                                                                                                                                                             }
@@ -1125,7 +1125,7 @@ DEF hose Humanoid {
                                                                                                                                                                   rotation 0 1 0 0
                                                                                                                                                                   children [
                                                                                                                                                                     Inline {
-                                                                                                                                                                      url "L11ND-visual.wrl"
+                                                                                                                                                                      url "shape/L11ND-visual.wrl"
                                                                                                                                                                     }
                                                                                                                                                                   ]
                                                                                                                                                                 }
@@ -1152,7 +1152,7 @@ DEF hose Humanoid {
                                                                                                                                                                       rotation 0 1 0 0
                                                                                                                                                                       children [
                                                                                                                                                                         Inline {
-                                                                                                                                                                          url "L11WD-visual.wrl"
+                                                                                                                                                                          url "shape/L11WD-visual.wrl"
                                                                                                                                                                         }
                                                                                                                                                                       ]
                                                                                                                                                                     }
@@ -1179,7 +1179,7 @@ DEF hose Humanoid {
                                                                                                                                                                           rotation 0 1 0 0
                                                                                                                                                                           children [
                                                                                                                                                                             Inline {
-                                                                                                                                                                              url "L11ND-visual.wrl"
+                                                                                                                                                                              url "shape/L11ND-visual.wrl"
                                                                                                                                                                             }
                                                                                                                                                                           ]
                                                                                                                                                                         }
@@ -1206,7 +1206,7 @@ DEF hose Humanoid {
                                                                                                                                                                               rotation 0 1 0 0
                                                                                                                                                                               children [
                                                                                                                                                                                 Inline {
-                                                                                                                                                                                  url "L11WD-visual.wrl"
+                                                                                                                                                                                  url "shape/L11WD-visual.wrl"
                                                                                                                                                                                 }
                                                                                                                                                                               ]
                                                                                                                                                                             }
@@ -1233,7 +1233,7 @@ DEF hose Humanoid {
                                                                                                                                                                                   rotation 0 1 0 0
                                                                                                                                                                                   children [
                                                                                                                                                                                     Inline {
-                                                                                                                                                                                      url "L11ND-visual.wrl"
+                                                                                                                                                                                      url "shape/L11ND-visual.wrl"
                                                                                                                                                                                     }
                                                                                                                                                                                   ]
                                                                                                                                                                                 }
@@ -1260,7 +1260,7 @@ DEF hose Humanoid {
                                                                                                                                                                                       rotation 0 1 0 0
                                                                                                                                                                                       children [
                                                                                                                                                                                         Inline {
-                                                                                                                                                                                          url "L11WD-visual.wrl"
+                                                                                                                                                                                          url "shape/L11WD-visual.wrl"
                                                                                                                                                                                         }
                                                                                                                                                                                       ]
                                                                                                                                                                                     }
@@ -1287,7 +1287,7 @@ DEF hose Humanoid {
                                                                                                                                                                                           rotation 0 1 0 0
                                                                                                                                                                                           children [
                                                                                                                                                                                             Inline {
-                                                                                                                                                                                              url "L11ND-visual.wrl"
+                                                                                                                                                                                              url "shape/L11ND-visual.wrl"
                                                                                                                                                                                             }
                                                                                                                                                                                           ]
                                                                                                                                                                                         }
@@ -1314,7 +1314,7 @@ DEF hose Humanoid {
                                                                                                                                                                                               rotation 0 1 0 0
                                                                                                                                                                                               children [
                                                                                                                                                                                                 Inline {
-                                                                                                                                                                                                  url "L11WD-visual.wrl"
+                                                                                                                                                                                                  url "shape/L11WD-visual.wrl"
                                                                                                                                                                                                 }
                                                                                                                                                                                               ]
                                                                                                                                                                                             }
@@ -1341,7 +1341,7 @@ DEF hose Humanoid {
                                                                                                                                                                                                   rotation 0 1 0 0
                                                                                                                                                                                                   children [
                                                                                                                                                                                                     Inline {
-                                                                                                                                                                                                      url "L11ND-visual.wrl"
+                                                                                                                                                                                                      url "shape/L11ND-visual.wrl"
                                                                                                                                                                                                     }
                                                                                                                                                                                                   ]
                                                                                                                                                                                                 }
@@ -1368,7 +1368,7 @@ DEF hose Humanoid {
                                                                                                                                                                                                       rotation 0 1 0 0
                                                                                                                                                                                                       children [
                                                                                                                                                                                                         Inline {
-                                                                                                                                                                                                          url "L11WD-visual.wrl"
+                                                                                                                                                                                                          url "shape/L11WD-visual.wrl"
                                                                                                                                                                                                         }
                                                                                                                                                                                                       ]
                                                                                                                                                                                                     }
@@ -1395,7 +1395,7 @@ DEF hose Humanoid {
                                                                                                                                                                                                           rotation 0 1 0 0
                                                                                                                                                                                                           children [
                                                                                                                                                                                                             Inline {
-                                                                                                                                                                                                              url "L11ND-visual.wrl"
+                                                                                                                                                                                                              url "shape/L11ND-visual.wrl"
                                                                                                                                                                                                             }
                                                                                                                                                                                                           ]
                                                                                                                                                                                                         }
@@ -1422,7 +1422,7 @@ DEF hose Humanoid {
                                                                                                                                                                                                               rotation 0 1 0 0
                                                                                                                                                                                                               children [
                                                                                                                                                                                                                 Inline {
-                                                                                                                                                                                                                  url "L11WD-visual.wrl"
+                                                                                                                                                                                                                  url "shape/L11WD-visual.wrl"
                                                                                                                                                                                                                 }
                                                                                                                                                                                                               ]
                                                                                                                                                                                                             }
@@ -1449,7 +1449,7 @@ DEF hose Humanoid {
                                                                                                                                                                                                                   rotation 0 1 0 0
                                                                                                                                                                                                                   children [
                                                                                                                                                                                                                     Inline {
-                                                                                                                                                                                                                      url "L11ND-visual.wrl"
+                                                                                                                                                                                                                      url "shape/L11ND-visual.wrl"
                                                                                                                                                                                                                     }
                                                                                                                                                                                                                   ]
                                                                                                                                                                                                                 }
@@ -1476,7 +1476,7 @@ DEF hose Humanoid {
                                                                                                                                                                                                                       rotation 0 1 0 0
                                                                                                                                                                                                                       children [
                                                                                                                                                                                                                         Inline {
-                                                                                                                                                                                                                          url "L11WD-visual.wrl"
+                                                                                                                                                                                                                          url "shape/L11WD-visual.wrl"
                                                                                                                                                                                                                         }
                                                                                                                                                                                                                       ]
                                                                                                                                                                                                                     }
@@ -1503,7 +1503,7 @@ DEF hose Humanoid {
                                                                                                                                                                                                                           rotation 0 1 0 0
                                                                                                                                                                                                                           children [
                                                                                                                                                                                                                             Inline {
-                                                                                                                                                                                                                              url "L11ND-visual.wrl"
+                                                                                                                                                                                                                              url "shape/L11ND-visual.wrl"
                                                                                                                                                                                                                             }
                                                                                                                                                                                                                           ]
                                                                                                                                                                                                                         }
@@ -1530,7 +1530,7 @@ DEF hose Humanoid {
                                                                                                                                                                                                                               rotation 0 1 0 0
                                                                                                                                                                                                                               children [
                                                                                                                                                                                                                                 Inline {
-                                                                                                                                                                                                                                  url "L11WD-visual.wrl"
+                                                                                                                                                                                                                                  url "shape/L11WD-visual.wrl"
                                                                                                                                                                                                                                 }
                                                                                                                                                                                                                               ]
                                                                                                                                                                                                                             }
@@ -1557,7 +1557,7 @@ DEF hose Humanoid {
                                                                                                                                                                                                                                   rotation 1.0 -0.0 -0.0 3.14160344686
                                                                                                                                                                                                                                   children [
                                                                                                                                                                                                                                     Inline {
-                                                                                                                                                                                                                                      url "L72ND-visual.wrl"
+                                                                                                                                                                                                                                      url "shape/L72ND-visual.wrl"
                                                                                                                                                                                                                                     }
                                                                                                                                                                                                                                   ]
                                                                                                                                                                                                                                 }

@@ -130,10 +130,10 @@ DEF car Humanoid {
           children [
 	    Surface {
 	      visual [ 
-	        Inline { url "car-visual.wrl" } 
-	        Inline { url "windows.wrl" } 
+	        Inline { url "shape/car-visual.wrl" } 
+	        Inline { url "shape/windows.wrl" } 
               ]
-	      collision [ Inline { url "car-collision.wrl" } ]
+	      collision [ Inline { url "shape/car-collision.wrl" } ]
 	    }
           ]
         }

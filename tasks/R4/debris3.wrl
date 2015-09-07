@@ -122,7 +122,7 @@ DEF debris3 Humanoid {
               rotation 0 1 0 0
               children [
                 Inline {
-                  url "debris3-visual.wrl"
+                  url "shape/debris3-visual.wrl"
                 }
               ]
             }

@@ -122,7 +122,7 @@ DEF O2_target6 Humanoid {
               rotation 0 1 0 0
               children [
                 Inline {
-                  url "target6-visual.wrl"
+                  url "shape/target6-visual.wrl"
                 }
               ]
             }

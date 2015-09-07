@@ -141,7 +141,7 @@ DEF nozzle Humanoid {
               rotation 0 1 0 0
               children [
                 Inline {
-                  url "nozzle-visual.wrl"
+                  url "shape/nozzle-visual.wrl"
                 }
               ]
             }

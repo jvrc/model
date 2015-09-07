@@ -123,7 +123,7 @@ items:
               -0.666276021, 0, 0.745705212, 
               0, 1, 0, 
               -0.745705212, 0, -0.666276021 ]
-            jointPositions: [  0.000000 ]
+            jointPositions: [  ]
             initialRootPosition: [ 5.838, 8.836, 0.755 ]
             initialRootAttitude: [ 
               -0.666276021, 0, 0.745705212, 
@@ -146,7 +146,7 @@ items:
               0.621609968, 0, 0.78332691, 
               0, 1, 0, 
               -0.78332691, 0, 0.621609968 ]
-            jointPositions: [  0.000000 ]
+            jointPositions: [  ]
             initialRootPosition: [ 5.812, 13.783, 2.598 ]
             initialRootAttitude: [ 
               0.621609968, 0, 0.78332691, 
@@ -158,6 +158,52 @@ items:
             isEditable: true
         - 
           id: 8
+          name: "target3"
+          plugin: Body
+          class: BodyItem
+          data: 
+            modelFile: "target3.wrl"
+            currentBaseLink: "target3"
+            rootPosition: [ 4.5, 6, 1.22 ]
+            rootAttitude: [ 
+              1, 0, -0, 
+              -0, 0.000796326711, -0.999999683, 
+              0, 0.999999683, 0.000796326711 ]
+            jointPositions: [  ]
+            initialRootPosition: [ 4.5, 6, 1.22 ]
+            initialRootAttitude: [ 
+              1, 0, -0, 
+              -0, 0.000796326711, -0.999999683, 
+              0, 0.999999683, 0.000796326711 ]
+            zmp: [ 0, 0, 0 ]
+            collisionDetection: true
+            selfCollisionDetection: false
+            isEditable: true
+        - 
+          id: 9
+          name: "target4"
+          plugin: Body
+          class: BodyItem
+          data: 
+            modelFile: "target4.wrl"
+            currentBaseLink: "target4"
+            rootPosition: [ 3.724, 15.18, 1.62 ]
+            rootAttitude: [ 
+              0.000796326711, 0, -0.999999683, 
+              0, 1, 0, 
+              0.999999683, 0, 0.000796326711 ]
+            jointPositions: [  ]
+            initialRootPosition: [ 3.724, 15.18, 1.62 ]
+            initialRootAttitude: [ 
+              0.000796326711, -0, -0.999999683, 
+              0, 1, -0, 
+              0.999999683, 0, 0.000796326711 ]
+            zmp: [ 0, 0, 0 ]
+            collisionDetection: true
+            selfCollisionDetection: false
+            isEditable: true
+        - 
+          id: 10
           name: "flag1L"
           plugin: Body
           class: BodyItem
@@ -180,7 +226,7 @@ items:
             selfCollisionDetection: false
             isEditable: true
         - 
-          id: 9
+          id: 11
           name: "flag1R"
           plugin: Body
           class: BodyItem
@@ -203,7 +249,7 @@ items:
             selfCollisionDetection: false
             isEditable: true
         - 
-          id: 10
+          id: 12
           name: "flag2L"
           plugin: Body
           class: BodyItem
@@ -226,7 +272,7 @@ items:
             selfCollisionDetection: false
             isEditable: true
         - 
-          id: 11
+          id: 13
           name: "flag2R"
           plugin: Body
           class: BodyItem
@@ -266,7 +312,7 @@ views:
     class: ItemTreeView
     mounted: true
     state: 
-      checked: [ 3, 4, 5, 6, 7, 8, 9, 10, 11 ]
+      checked: [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ]
       expanded: [ 1 ]
   - 
     id: 3
@@ -316,7 +362,7 @@ views:
           far: 100
           eye: [ 32.3151454, 32.2150563, 11.573726 ]
           direction: [ -0.810463021, -0.546942144, -0.209771263 ]
-          up: [ -0.173880611, -0.117343582, 0.977750488 ]
+          up: [ -0.17388061, -0.117343582, 0.977750488 ]
         - 
           camera: Orthographic
           orthoHeight: 20
@@ -356,6 +402,7 @@ views:
       spinBox: true
       slider: true
       labelOnLeft: true
+      currentBodyItem: 9
   - 
     id: 8
     plugin: Body
@@ -363,6 +410,7 @@ views:
     mounted: true
     state: 
       listingMode: "Link List"
+      currentBodyItem: 9
   - 
     id: 9
     plugin: Python
@@ -387,6 +435,8 @@ toolbars:
     snapDistance: 0.025
     penetrationBlockDepth: 0.0005
     lazyCollisionDetectionMode: true
+  "BodyBar": 
+    current: 9
   "LeggedBodyBar": 
     stanceWidth: 0.15
   "BodyMotionGenerationBar": 
@@ -468,6 +518,16 @@ Body:
         showZmp: false
       - 
         bodyItem: 11
+        showCenterOfMass: false
+        showPpcom: false
+        showZmp: false
+      - 
+        bodyItem: 12
+        showCenterOfMass: false
+        showPpcom: false
+        showZmp: false
+      - 
+        bodyItem: 13
         showCenterOfMass: false
         showPpcom: false
         showZmp: false

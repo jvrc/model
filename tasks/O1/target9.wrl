@@ -122,7 +122,7 @@ DEF O1_target9 Humanoid {
               rotation 0 1 0 0
               children [
                 Inline {
-                  url "target9-visual.wrl"
+                  url "shape/target9-visual.wrl"
                 }
               ]
             }

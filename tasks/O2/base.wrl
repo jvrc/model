@@ -129,8 +129,8 @@ DEF base Humanoid {
         DEF base Segment {
           children [
 	    Surface {
-	      visual [ Inline { url "base-visual.wrl" } ]
-	      collision [ Inline { url "base-collision.wrl" } ]
+	      visual [ Inline { url "shape/base-visual.wrl" } ]
+	      collision [ Inline { url "shape/base-collision.wrl" } ]
 	    }
           ]
         }

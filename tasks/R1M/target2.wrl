@@ -122,7 +122,7 @@ DEF R1M_target2 Humanoid {
               rotation 0 1 0 0
               children [
                 Inline {
-                  url "target2-visual.wrl"
+                  url "shape/target2-visual.wrl"
                 }
               ]
             }

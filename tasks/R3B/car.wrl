@@ -129,8 +129,8 @@ DEF car Humanoid {
         DEF car Segment {
           children [
 	    Surface {
-	      visual [ Inline { url "car-visual.wrl" } ]
-	      collision [ Inline { url "car-collision.wrl" } ]
+	      visual [ Inline { url "shape/car-visual.wrl" } ]
+	      collision [ Inline { url "shape/car-collision.wrl" } ]
 	    }
           ]
         }
