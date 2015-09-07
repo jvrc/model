@@ -114,7 +114,7 @@ DEF R3A_spreader Humanoid {
         DEF R3A_spreader Segment {
           mass 2.0
           centerOfMass 2.263002 1.840704 1.241542
-          momentsOfInertia [0.000261 0.0 0.0 0.0 3.5e-05 2.2e-05 0.0 2.2e-05 0.000253]
+          momentsOfInertia [0.0261 0.0 0.0 0.0 3.5e-03 2.2e-03 0.0 2.2e-03 0.0253]
           children [
             Transform {
               scale 1 1 1
