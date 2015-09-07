@@ -2985,7 +2985,7 @@ Shape {
 Shape {
 	appearance Appearance {
 		texture ImageTexture {
-			url [ "src/jvrc-model/tasks/R3A/_9.jpg" "_9.jpg" "src/jvrc-model/tasks/R3A/_9.jpg" ]
+			url [ "_9.jpg" "_9.jpg" "_9.jpg" ]
 		}
 	}
 	geometry IndexedFaceSet {
@@ -4370,7 +4370,7 @@ Shape {
 Shape {
 	appearance Appearance {
 		texture ImageTexture {
-			url [ "src/jvrc-model/tasks/R3A/_9.jpg" "_9.jpg" "src/jvrc-model/tasks/R3A/_9.jpg" ]
+			url [ "_9.jpg" "_9.jpg" "_9.jpg" ]
 		}
 	}
 	geometry IndexedFaceSet {
