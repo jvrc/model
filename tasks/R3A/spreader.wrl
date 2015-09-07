@@ -58,6 +58,24 @@ PROTO Segment [
   }
 }
 
+PROTO Surface [
+ field   SFVec3f bboxCenter 0 0 0
+ field   SFVec3f bboxSize   -1 -1 -1
+ field   MFNode  visual     [ ]
+ field   MFNode  collision  [ ]
+ eventIn MFNode  addChildren
+ eventIn MFNode  removeChildren
+]
+{
+  Group {
+    addChildren    IS addChildren
+    bboxCenter     IS bboxCenter
+    bboxSize       IS bboxSize
+    children       IS visual
+    removeChildren IS removeChildren
+  }
+}
+
 PROTO Humanoid [
   field           SFVec3f    bboxCenter            0 0 0
   field           SFVec3f    bboxSize              -1 -1 -1
@@ -103,17 +121,18 @@ PROTO ExtraJoint [
 {
 }
 
+
+
 DEF R3A_spreader Humanoid {
   humanoidBody [
     DEF R3A_spreader Joint {
       jointType "free"
-      jointId 0
-      translation -0.2 3.5 0.0
+      translation -0.2 3.5 0.01
       rotation 0 1 0 0
       children [
         DEF R3A_spreader Segment {
-          mass 2.0
-          centerOfMass 2.263002 1.840704 1.241542
+          mass 14.3
+          centerOfMass 2.263 1.8407 1.24154
           momentsOfInertia [0.0261 0.0 0.0 0.0 3.5e-03 2.2e-03 0.0 2.2e-03 0.0253]
           children [
             Transform {
