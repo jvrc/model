@@ -131,7 +131,7 @@ DEF nozzle Humanoid {
       rotation 0 1 0 0
       children [
         DEF nozzle Segment {
-          mass 0.5
+          mass 1.0
           centerOfMass 0.537751 7.10173 2.1984
           momentsOfInertia [0.118401 0.0 0.0 0.0 0.00404786 -0.00097855 0.0 -0.00097855 0.118282]
           children [
