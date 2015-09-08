@@ -1,0 +1,9 @@
+tasks:
+  - name: R5
+    events:
+      - type: gate
+        label: Gate-1
+        location: [ [ 4.59, 3.61 ], [ 1.79, 3.61 ] ]
+      - type: gate
+        label: Gate-2
+        location: [ [ 4.59, 4.79 ], [ 1.79, 4.79 ] ]
