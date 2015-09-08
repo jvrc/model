@@ -127,7 +127,7 @@ DEF target1 Humanoid {
   humanoidBody [
     DEF target1 Joint {
       jointType "fixed"
-      translation 5.12 18.01 0.655
+      translation 5.12 18.05 2.355
       rotation -1.0 -0.0 -0.0 1.57
       children [
         DEF target1 Segment {

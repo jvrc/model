@@ -294,29 +294,6 @@ items:
             collisionDetection: true
             selfCollisionDetection: false
             isEditable: true
-        - 
-          id: 14
-          name: "target5"
-          plugin: Body
-          class: BodyItem
-          data: 
-            modelFile: "target5.wrl"
-            currentBaseLink: "target5"
-            rootPosition: [ 3.724, 15.18, 0.37 ]
-            rootAttitude: [ 
-              1, 0, 0, 
-              0, 1, 0, 
-              0, 0, 1 ]
-            jointPositions: [  ]
-            initialRootPosition: [ 3.724, 15.18, 0.37 ]
-            initialRootAttitude: [ 
-              1, 0, 0, 
-              0, 1, 0, 
-              0, 0, 1 ]
-            zmp: [ 0, 0, 0 ]
-            collisionDetection: true
-            selfCollisionDetection: false
-            isEditable: true
 views: 
   - 
     id: 0

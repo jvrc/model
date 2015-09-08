@@ -127,8 +127,8 @@ DEF target3 Humanoid {
   humanoidBody [
     DEF target3 Joint {
       jointType "fixed"
-      translation 5.838 8.836 0.755
-      rotation 7.33016724921e-07 0.999999999999 7.33016724921e-07 2.29999965359
+      translation 4.5 6.0 1.22
+      rotation 1.0 -0.0 -0.0 1.57
       children [
         DEF target3 Segment {
           mass 0
@@ -136,7 +136,7 @@ DEF target3 Humanoid {
           momentsOfInertia [1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]
           children [
             Transform {
-              scale 14.0 14.0 5.0
+              scale 14.0 14.0 0.1
               translation 0 0 0
               rotation 0 1 0 0
               children [
