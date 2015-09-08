@@ -112,7 +112,7 @@ DEF debris2 Humanoid {
       rotation 0 1 0 0
       children [
         DEF debris2 Segment {
-          mass 10.0
+          mass 3.0
           centerOfMass 4.556215 9.875 0.612
           momentsOfInertia [0.106773 -0.023438 0.0 -0.023438 0.044271 0.0 0.0 0.0 0.130211]
           children [
