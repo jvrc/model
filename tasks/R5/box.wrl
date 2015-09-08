@@ -203,19 +203,19 @@ DEF box Humanoid {
               jointType "rotate"
               jointAxis -1.0 0.0 0.0
               jointId 0
-              translation 0.005 -0.0019 0.4865
+              translation 0.007253 -0.001736 0.4850498
               rotation 0 1 0 0
-              ulimit 1.54
+              ulimit 1.57
               llimit 0.0
               children [
                 DEF doorknob Segment {
-                  mass 1e-14
-                  centerOfMass -0.67 -7.2381 -2.274
-                  momentsOfInertia [0.999999999998 1.4548581e-13 4.57074e-14 1.4548581e-13 1.0 4.93783182e-13 4.57074e-14 4.93783182e-13 0.999999999998]
+                  mass 0.1
+                  centerOfMass 0.021672 0.036101 0.0013232
+                  momentsOfInertia [-8.3814017732e-05 2.17828992e-05 1.155135344e-05 2.17828992e-05 1.0913999068e-05 2.771896726e-05 1.155135344e-05 2.771896726e-05 -7.04480168e-05]
                   children [
                     Transform {
                       scale 1.0 1.0 1.0
-                      translation -0.67 -7.2381 -2.274
+                      translation 1.11022302463e-16 0.015436 0.0048502
                       rotation 0 1 0 0
                       children [
                         Inline {
