@@ -140,7 +140,7 @@ DEF car Humanoid {
 		      rotation 0 0 1 0.7853981633974483
 		      children [
 		        Inline { url "shape/car-visual/left-front-door.wrl" } 
-		        Inline { url "shape/car-visual/left-front-door-glass.wrl" } 
+		        #Inline { url "shape/car-visual/left-front-door-glass.wrl" } 
 		      ]
 		    }
 		    Transform {
