@@ -129,9 +129,46 @@ DEF car Humanoid {
         DEF car Segment {
           children [
 	    Surface {
-	      visual [ 
-	        Inline { url "shape/car-visual.wrl" } 
-	        Inline { url "shape/windows.wrl" } 
+	      visual [
+	        Transform { 
+		  translation 0.62 2.26 0.1
+		  children [
+  	            Inline { url "shape/car-visual/body.wrl" } 
+	            Inline { url "shape/car-visual/body-glasses.wrl" } 
+		    Transform {
+		      translation 5.64 0.45 0
+		      rotation 0 0 1 0.7853981633974483
+		      children [
+		        Inline { url "shape/car-visual/left-front-door.wrl" } 
+		        Inline { url "shape/car-visual/left-front-door-glass.wrl" } 
+		      ]
+		    }
+		    Transform {
+		      translation 4.87 0.155 -0.03
+		      rotation 0 0 1 0.7853981633974483
+		      children [
+		        Inline { url "shape/car-visual/left-rear-door.wrl" } 
+		        Inline { url "shape/car-visual/left-rear-door-glasses.wrl" } 
+		      ]
+		    }
+		    Transform {
+		      #translation -3.835 4.85 0
+		      #rotation 0 0 1 -0.7853981633974483
+		      children [
+		        Inline { url "shape/car-visual/right-front-door.wrl" } 
+		        Inline { url "shape/car-visual/right-front-door-glass.wrl" } 
+		      ]
+		    }
+		    Transform {
+		      #translation -3.2 6.42 0
+		      #rotation 0 0 1 -1.0471975511965976
+		      children [
+		        Inline { url "shape/car-visual/right-rear-door.wrl" } 
+		        Inline { url "shape/car-visual/right-rear-door-glasses.wrl" } 
+		      ]
+		    }
+		  ]
+	        }
               ]
 	      collision [ Inline { url "shape/car-collision.wrl" } ]
 	    }
