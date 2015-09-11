@@ -107,13 +107,12 @@ DEF debris2 Humanoid {
   humanoidBody [
     DEF debris2 Joint {
       jointType "free"
-      jointId 0
       translation 0.0 0.0 0.01
       rotation 0 1 0 0
       children [
         DEF debris2 Segment {
-          mass 3.0
-          centerOfMass 4.556215 9.875 0.612
+          mass 0.001
+          centerOfMass 4.55621 9.875 0.612
           momentsOfInertia [0.106773 -0.023438 0.0 -0.023438 0.044271 0.0 0.0 0.0 0.130211]
           children [
             Transform {
@@ -129,6 +128,21 @@ DEF debris2 Humanoid {
           ]
         }
             
+        DEF anchor_debris2 Joint {
+          jointType "fixed"
+          translation 4.4325 10.25 0.6
+          rotation 0 1 0 0
+          children [
+            DEF debris2_masscenter Segment {
+              mass 2.999
+              centerOfMass 0 0 0
+              momentsOfInertia [1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]
+              children [
+              ]
+            }
+                
+          ]
+        }
       ]
     }
   ]
