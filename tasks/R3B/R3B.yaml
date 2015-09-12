@@ -6,4 +6,4 @@ tasks:
         location: [ [ 4.59, 3.035 ], [ 1.79, 3.035 ] ]
       - type: gate
         label: Gate-2
-        location: [ [ 7.59, 3.035 ], [ 4.79, 3.035 ] ]
+        location: [ [ 4.79, 3.035 ], [ 7.59, 3.035 ] ]
