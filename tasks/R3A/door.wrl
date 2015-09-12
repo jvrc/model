@@ -135,7 +135,23 @@ DEF door Humanoid {
           momentsOfInertia [0.051214 0.000431 1.7e-05 0.000431 0.015529 -0.000694 1.7e-05 -0.000694 0.037332]
           children [
 	    Surface {
-	      visual [ Inline { url "shape/door-visual.wrl" } ]
+	      visual [ 
+		Inline { url "shape/car-visual/marks-on-door.wrl" } 
+	        Transform {
+		  translation 6.64 4.045 2.61
+		  rotation -0.0076184    0.99861 -0.0521519 3.09885
+		  children [
+		    Transform {
+		      translation 5.64 0.45 0
+		      rotation 0 0 1 0.7853981633974483
+		      children [
+		        Inline { url "shape/car-visual/left-front-door.wrl" } 
+		        Inline { url "shape/car-visual/left-front-door-glass.wrl" } 
+		      ]
+		    }
+		  ]
+		}
+	      ]
 	      collision [ Inline { url "shape/door-collision.wrl" } ]
             }
           ]
