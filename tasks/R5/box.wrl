@@ -125,12 +125,12 @@ PROTO ExtraJoint [
 
 DEF box Humanoid {
   humanoidBody [
-    DEF box Joint {
+    DEF box-front Joint {
       jointType "fixed"
       translation 0.0 0.0 0.0
       rotation 0 1 0 0
       children [
-        DEF box Segment {
+        DEF box-front_s Segment {
           mass 10000000.0
           centerOfMass 0 0 0
           momentsOfInertia [1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]
@@ -141,13 +141,70 @@ DEF box Humanoid {
               rotation 0 1 0 0
               children [
                 Inline {
-                  url "shape/box-visual.wrl"
+                  url "shape/outer-front.wrl"
                 }
               ]
             }
           ]
         }
             
+        DEF hooks Joint {
+          jointType "fixed"
+          children [
+            DEF hooks_s Segment {
+	      children Inline { url "shape/hooks.wrl" }
+	    }
+          ]
+        }
+        DEF valve-base Joint {
+          jointType "fixed"
+          children [
+            DEF valve-base_s Segment {
+	      children Inline { url "shape/valve-base.wrl" }
+	    }
+          ]
+        }
+        DEF box-top Joint {
+          jointType "fixed"
+          children [
+            DEF box-top_s Segment {
+	      children Inline { url "shape/outer-top.wrl" }
+	    }
+          ]
+        }
+        DEF box-left Joint {
+          jointType "fixed"
+          children [
+            DEF box-left_s Segment {
+	      children [
+	        Inline { url "shape/inner-left.wrl" }
+	        Inline { url "shape/outer-left.wrl" }
+	      ]
+	    }
+          ]
+        }
+        DEF box-right Joint {
+          jointType "fixed"
+          children [
+            DEF box-right_s Segment {
+	      children [
+	        Inline { url "shape/inner-right.wrl" }
+	        Inline { url "shape/outer-right.wrl" }
+	      ]
+	    }
+          ]
+        }
+        DEF box-bottom Joint {
+          jointType "fixed"
+          children [
+            DEF box-bottom_s Segment {
+	      children [
+	        Inline { url "shape/inner-bottom.wrl" }
+	        Inline { url "shape/outer-bottom.wrl" }
+	      ]
+	    }
+          ]
+        }
         DEF hinge_door Joint {
           jointType "rotate"
           jointAxis 0.0 1.0 0.0
