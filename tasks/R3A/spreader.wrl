@@ -125,19 +125,19 @@ PROTO ExtraJoint [
 
 DEF R3A_spreader Humanoid {
   humanoidBody [
-    DEF R3A_spreader Joint {
+    DEF spreader Joint {
       jointType "free"
-      translation -0.2 3.5 0.01
+      translation 2.063 5.3407 1.24154
       rotation 0 1 0 0
       children [
-        DEF R3A_spreader Segment {
+        DEF spreader Segment {
           mass 14.3
-          centerOfMass 2.263 1.8407 1.24154
+          centerOfMass 0.0 0.0 0.0
           momentsOfInertia [0.0261 0.0 0.0 0.0 3.5e-03 2.2e-03 0.0 2.2e-03 0.0253]
           children [
             Transform {
               scale 1 1 1
-              translation 0 0 0
+              translation -2.263 -1.8407 -1.24154
               rotation 0 1 0 0
               children [
                 Inline {
@@ -155,6 +155,6 @@ DEF R3A_spreader Humanoid {
   ]
   segments [
   ]
-  name "R3A_spreader"
+  name "spreader"
   version "1.0"
 }
