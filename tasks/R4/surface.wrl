@@ -5,7 +5,7 @@
 Shape {
 	appearance Appearance {
 		texture ImageTexture {
-			url [ "RoadTexture.jpg" "RoadTexture.jpg" "/home/kanehiro/src/jvrc-model/tasks/R5/RoadTexture.jpg" ]
+			url [ "RoadTexture.jpg" "RoadTexture.jpg" "RoadTexture.jpg" ]
 		}
 	}
 	geometry IndexedFaceSet {

@@ -123,14 +123,14 @@ PROTO ExtraJoint [
 
 
 
-DEF O2_target3 Humanoid {
+DEF target3 Humanoid {
   humanoidBody [
-    DEF O2_target3 Joint {
+    DEF target3 Joint {
       jointType "fixed"
       translation 2.958 7.021 5.58
       rotation 9.58455626089e-07 0.999999999999 9.58455626089e-07 2.59999965359
       children [
-        DEF O2_target3 Segment {
+        DEF target3 Segment {
           mass 0
           centerOfMass 0 0 0
           momentsOfInertia [1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]
@@ -154,6 +154,6 @@ DEF O2_target3 Humanoid {
   joints [
   ]
   
-  name "O2_target3"
+  name "target3"
   version "1.0"
 }
