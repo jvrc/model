@@ -123,14 +123,14 @@ PROTO ExtraJoint [
 
 
 
-DEF target2 Humanoid {
+DEF target4 Humanoid {
   humanoidBody [
-    DEF target2 Joint {
+    DEF target4 Joint {
       jointType "fixed"
-      translation 3.351 7.157 4.986
-      rotation -0.0 -1.0 -0.0 1.57
+      translation 3.187 7.115 5.702
+      rotation 9.58455626089e-07 0.999999999999 9.58455626089e-07 2.59999965359
       children [
-        DEF target2 Segment {
+        DEF target4 Segment {
           mass 0
           centerOfMass 0 0 0
           momentsOfInertia [1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]
@@ -141,7 +141,7 @@ DEF target2 Humanoid {
               rotation 0 1 0 0
               children [
                 Inline {
-                  url "shape/target2-visual.wrl"
+                  url "shape/target4-visual.wrl"
                 }
               ]
             }
@@ -154,6 +154,6 @@ DEF target2 Humanoid {
   joints [
   ]
   
-  name "target2"
+  name "target4"
   version "1.0"
 }
