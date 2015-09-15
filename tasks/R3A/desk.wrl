@@ -103,15 +103,15 @@ PROTO ExtraJoint [
 {
 }
 
-DEF R3A_desk Humanoid {
+DEF desk Humanoid {
   humanoidBody [
-    DEF R3A_desk Joint {
+    DEF desk Joint {
       jointType "fixed"
       jointId 0
       translation -0.2 3.5 0.0
       rotation 0 1 0 0
       children [
-        DEF R3A_desk Segment {
+        DEF desk Segment {
           mass 0
           centerOfMass 0 0 0
           momentsOfInertia [1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]
@@ -136,6 +136,6 @@ DEF R3A_desk Humanoid {
   ]
   segments [
   ]
-  name "R3A_desk"
+  name "desk"
   version "1.0"
 }

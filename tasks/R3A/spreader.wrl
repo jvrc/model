@@ -123,7 +123,7 @@ PROTO ExtraJoint [
 
 
 
-DEF R3A_spreader Humanoid {
+DEF spreader Humanoid {
   humanoidBody [
     DEF spreader Joint {
       jointType "free"
