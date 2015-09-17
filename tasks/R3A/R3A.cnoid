@@ -15,34 +15,6 @@ items:
       children: 
         - 
           id: 2
-          name: "AISTSimulator"
-          plugin: Body
-          class: AISTSimulatorItem
-          data: 
-            realtimeSync: false
-            recording: tail
-            timeRangeMode: TimeBar range
-            onlyActiveControlPeriod: true
-            timeLength: 3
-            allLinkPositionOutputMode: false
-            deviceStateOutput: true
-            controllerThreads: true
-            recordCollisionData: false
-            dynamicsMode: Forward dynamics
-            integrationMode: Runge Kutta
-            gravity: [ 0, 0, -9.80665 ]
-            staticFriction: 0.5
-            slipFriction: 0.5
-            cullingThresh: 0.01
-            contactCullingDepth: 0.05
-            errorCriterion: 0.001
-            maxNumIterations: 1000
-            contactCorrectionDepth: 0.0001
-            contactCorrectionVelocityRatio: 30
-            kinematicWalking: false
-            2Dmode: false
-        - 
-          id: 3
           name: "wall"
           plugin: Body
           class: BodyItem
@@ -65,7 +37,7 @@ items:
             selfCollisionDetection: false
             isEditable: true
         - 
-          id: 4
+          id: 3
           name: "spreader"
           plugin: Body
           class: BodyItem
@@ -77,18 +49,19 @@ items:
               1, 0, 0, 
               0, 1, 0, 
               0, 0, 1 ]
-            jointPositions: [  0.000000 ]
+            jointPositions: [  ]
             initialRootPosition: [ 2.063, 5.3407, 1.24154 ]
             initialRootAttitude: [ 
               1, 0, 0, 
               0, 1, 0, 
               0, 0, 1 ]
+            initialJointPositions: [  0.000000 ]
             zmp: [ 0, 0, 0 ]
             collisionDetection: true
             selfCollisionDetection: false
             isEditable: true
         - 
-          id: 5
+          id: 4
           name: "desk"
           plugin: Body
           class: BodyItem
@@ -106,12 +79,13 @@ items:
               1, 0, 0, 
               0, 1, 0, 
               0, 0, 1 ]
+            initialJointPositions: [  0.000000 ]
             zmp: [ 0, 0, 0 ]
             collisionDetection: true
             selfCollisionDetection: false
             isEditable: true
         - 
-          id: 6
+          id: 5
           name: "target1"
           plugin: Body
           class: BodyItem
@@ -126,15 +100,16 @@ items:
             jointPositions: [  0.000000 ]
             initialRootPosition: [ 2.847, 10.166, 0.849 ]
             initialRootAttitude: [ 
-              0.00079632671, 0, 0.999999683, 
+              0.000796326575, 0, 0.999999683, 
               0, 1, 0, 
-              -0.999999683, 0, 0.00079632671 ]
+              -0.999999683, 0, 0.000796326575 ]
+            initialJointPositions: [  0.000000 ]
             zmp: [ 0, 0, 0 ]
             collisionDetection: true
             selfCollisionDetection: false
             isEditable: true
         - 
-          id: 7
+          id: 6
           name: "car"
           plugin: Body
           class: BodyItem
@@ -157,7 +132,7 @@ items:
             selfCollisionDetection: false
             isEditable: true
         - 
-          id: 8
+          id: 7
           name: "door"
           plugin: Body
           class: BodyItem
@@ -175,12 +150,13 @@ items:
               1, 0, 0, 
               0, 1, 0, 
               0, 0, 1 ]
+            initialJointPositions: [  0.000000 ]
             zmp: [ 0, 0, 0 ]
             collisionDetection: true
             selfCollisionDetection: false
             isEditable: true
         - 
-          id: 9
+          id: 8
           name: "surface"
           plugin: Body
           class: BodyItem
@@ -203,7 +179,7 @@ items:
             selfCollisionDetection: false
             isEditable: true
         - 
-          id: 10
+          id: 9
           name: "flag1L"
           plugin: Body
           class: BodyItem
@@ -226,7 +202,7 @@ items:
             selfCollisionDetection: false
             isEditable: true
         - 
-          id: 11
+          id: 10
           name: "flag1R"
           plugin: Body
           class: BodyItem
@@ -249,7 +225,7 @@ items:
             selfCollisionDetection: false
             isEditable: true
         - 
-          id: 12
+          id: 11
           name: "flag2L"
           plugin: Body
           class: BodyItem
@@ -272,7 +248,7 @@ items:
             selfCollisionDetection: false
             isEditable: true
         - 
-          id: 13
+          id: 12
           name: "flag2R"
           plugin: Body
           class: BodyItem
@@ -294,6 +270,42 @@ items:
             collisionDetection: true
             selfCollisionDetection: false
             isEditable: true
+        - 
+          id: 13
+          name: "AISTSimulator"
+          plugin: Body
+          class: AISTSimulatorItem
+          data: 
+            realtimeSync: true
+            recording: full
+            timeRangeMode: TimeBar range
+            onlyActiveControlPeriod: true
+            timeLength: 600
+            allLinkPositionOutputMode: false
+            deviceStateOutput: true
+            controllerThreads: true
+            recordCollisionData: false
+            dynamicsMode: Forward dynamics
+            integrationMode: Runge Kutta
+            gravity: [ 0, 0, -9.80665 ]
+            staticFriction: 1
+            slipFriction: 1
+            cullingThresh: 0.005
+            contactCullingDepth: 0.03
+            errorCriterion: 0.001
+            maxNumIterations: 1000
+            contactCorrectionDepth: 0.0001
+            contactCorrectionVelocityRatio: 1
+            kinematicWalking: false
+            2Dmode: false
+          children: 
+            - 
+              id: 14
+              name: "JVRCManager"
+              plugin: JVRC
+              class: JVRCManagerItem
+              data: 
+                info: "R3A.yaml"
 views: 
   - 
     id: 0
@@ -312,8 +324,9 @@ views:
     class: ItemTreeView
     mounted: true
     state: 
-      checked: [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ]
-      expanded: [ 1 ]
+      selected: [ 1 ]
+      checked: [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ]
+      expanded: [ 1, 13 ]
   - 
     id: 3
     plugin: Base
@@ -325,11 +338,11 @@ views:
     class: SceneView
     mounted: true
     state: 
-      editMode: false
+      editMode: true
       viewpointControlMode: thirdPerson
       collisionLines: false
       polygonMode: fill
-      defaultHeadLight: true
+      defaultHeadLight: false
       defaultHeadLightIntensity: 0.75
       headLightLightingFromBack: false
       worldLight: true
@@ -355,16 +368,16 @@ views:
       useBufferForPicking: true
       cameras: 
         - 
-          camera: Perspective
+          camera: [ System, Perspective ]
           isCurrent: true
           fieldOfView: 0.6978
           near: 0.01
           far: 100
-          eye: [ 30.6920829, 22.0415788, 6.2478957 ]
-          direction: [ -0.888888889, -0.444444444, -0.111111111 ]
-          up: [ -0.099380799, -0.0496903995, 0.99380799 ]
+          eye: [ 15.499176, -7.83953514, 10.4706885 ]
+          direction: [ -0.662655574, 0.588683287, -0.462968225 ]
+          up: [ -0.346115942, 0.307478995, 0.886374877 ]
         - 
-          camera: Orthographic
+          camera: [ System, Orthographic ]
           orthoHeight: 20
           near: 0.01
           far: 100
@@ -381,7 +394,6 @@ views:
     state: 
       layoutMode: horizontal
       isAutoMode: false
-      currentTask: Wall
   - 
     id: 6
     plugin: Body
@@ -402,6 +414,7 @@ views:
       spinBox: true
       slider: true
       labelOnLeft: true
+      currentBodyItem: 4
   - 
     id: 8
     plugin: Body
@@ -409,15 +422,22 @@ views:
     mounted: true
     state: 
       listingMode: "Link List"
+      currentBodyItem: 4
   - 
     id: 9
+    name: "JVRC Score"
+    plugin: JVRC
+    class: JVRCScoreView
+    mounted: true
+  - 
+    id: 10
     plugin: Python
     class: PythonConsoleView
     mounted: true
 toolbars: 
   "TimeBar": 
     minTime: 0
-    maxTime: 30
+    maxTime: 600
     frameRate: 1000
     playbackFrameRate: 50
     idleLoopDrivenMode: false
@@ -433,9 +453,12 @@ toolbars:
     snapDistance: 0.025
     penetrationBlockDepth: 0.0005
     lazyCollisionDetectionMode: true
+  "BodyBar": 
+    current: 4
   "LeggedBodyBar": 
     stanceWidth: 0.15
   "BodyMotionGenerationBar": 
+    autoGenerationForNewBody: true
     balancer: false
     autoGeneration: false
     timeScaleRatio: 1
@@ -472,6 +495,11 @@ Body:
     updateJointVelocities: false
   "EditableSceneBody": 
     editableSceneBodies: 
+      - 
+        bodyItem: 2
+        showCenterOfMass: false
+        showPpcom: false
+        showZmp: false
       - 
         bodyItem: 3
         showCenterOfMass: false
@@ -522,11 +550,7 @@ Body:
         showCenterOfMass: false
         showPpcom: false
         showZmp: false
-      - 
-        bodyItem: 13
-        showCenterOfMass: false
-        showPpcom: false
-        showZmp: false
+    staticModelEditing: false
   "KinematicFaultChecker": 
     checkJointPositions: true
     angleMargin: 0
@@ -545,12 +569,12 @@ viewAreas:
     contents: 
       type: splitter
       orientation: horizontal
-      sizes: [ 274, 1335 ]
+      sizes: [ 326, 1588 ]
       children: 
         - 
           type: splitter
           orientation: vertical
-          sizes: [ 475, 475 ]
+          sizes: [ 497, 496 ]
           children: 
             - 
               type: pane
@@ -558,17 +582,17 @@ viewAreas:
               current: 2
             - 
               type: pane
-              views: [ 1, 8 ]
-              current: 1
+              views: [ 1, 8, 9 ]
+              current: 9
         - 
           type: splitter
           orientation: vertical
-          sizes: [ 679, 271 ]
+          sizes: [ 993, 0 ]
           children: 
             - 
               type: splitter
               orientation: horizontal
-              sizes: [ 578, 751 ]
+              sizes: [ 0, 1582 ]
               children: 
                 - 
                   type: pane
@@ -580,18 +604,12 @@ viewAreas:
                   current: 4
             - 
               type: pane
-              views: [ 3, 9 ]
+              views: [ 3, 10 ]
               current: 3
 layoutOfToolBars: 
   rows: 
     - 
       - { name: "FileBar", x: 0, priority: 0 }
-      - { name: "ScriptBar", x: 47, priority: 0 }
-      - { name: "TimeBar", x: 94, priority: 0 }
-      - { name: "SceneBar", x: 1057, priority: 0 }
-      - { name: "GraphBar", x: 1312, priority: 0 }
-      - { name: "SimulationBar", x: 1419, priority: 0 }
-    - 
-      - { name: "BodyBar", x: 0, priority: 0 }
-      - { name: "KinematicsBar", x: 260, priority: 0 }
-      - { name: "BodyMotionGenerationBar", x: 494, priority: 0 }
+      - { name: "TimeBar", x: 47, priority: 1 }
+      - { name: "SceneBar", x: 1457, priority: 2 }
+      - { name: "SimulationBar", x: 1464, priority: 0 }
