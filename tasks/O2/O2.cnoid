@@ -23,15 +23,15 @@ items:
             currentBaseLink: ""
             rootPosition: [ 0, 0, 0 ]
             rootAttitude: [ 
-              1, 0, 0, 
-              0, 1, 0, 
-              0, 0, 1 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             jointPositions: [  ]
             initialRootPosition: [ 0, 0, 0 ]
             initialRootAttitude: [ 
-              1, 0, 0, 
-              0, 1, 0, 
-              0, 0, 1 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             zmp: [ 0, 0, 0 ]
             collisionDetection: true
             selfCollisionDetection: false
@@ -46,15 +46,15 @@ items:
             currentBaseLink: ""
             rootPosition: [ 0, 0, 0 ]
             rootAttitude: [ 
-              1, 0, 0, 
-              0, 1, 0, 
-              0, 0, 1 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             jointPositions: [  ]
             initialRootPosition: [ 0, 0, 0 ]
             initialRootAttitude: [ 
-              1, 0, 0, 
-              0, 1, 0, 
-              0, 0, 1 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             zmp: [ 0, 0, 0 ]
             collisionDetection: true
             selfCollisionDetection: false
@@ -69,15 +69,15 @@ items:
             currentBaseLink: ""
             rootPosition: [ 0, 0, 0 ]
             rootAttitude: [ 
-              1, 0, 0, 
-              0, 1, 0, 
-              0, 0, 1 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             jointPositions: [  ]
             initialRootPosition: [ 0, 0, 0 ]
             initialRootAttitude: [ 
-              1, 0, 0, 
-              0, 1, 0, 
-              0, 0, 1 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             zmp: [ 0, 0, 0 ]
             collisionDetection: true
             selfCollisionDetection: false
@@ -92,15 +92,15 @@ items:
             currentBaseLink: ""
             rootPosition: [ 0, 0, 0 ]
             rootAttitude: [ 
-              1, 0, 0, 
-              0, 1, 0, 
-              0, 0, 1 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             jointPositions: [  ]
             initialRootPosition: [ 0, 0, 0 ]
             initialRootAttitude: [ 
-              1, 0, 0, 
-              0, 1, 0, 
-              0, 0, 1 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             zmp: [ 0, 0, 0 ]
             collisionDetection: true
             selfCollisionDetection: false
@@ -115,15 +115,15 @@ items:
             currentBaseLink: "Root"
             rootPosition: [ 0, 0, 0 ]
             rootAttitude: [ 
-              1, 0, 0, 
-              0, 1, 0, 
-              0, 0, 1 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             jointPositions: [  ]
             initialRootPosition: [ 0, 0, 0 ]
             initialRootAttitude: [ 
-              1, 0, 0, 
-              0, 1, 0, 
-              0, 0, 1 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             zmp: [ 0, 0, 0 ]
             collisionDetection: true
             selfCollisionDetection: false
@@ -138,15 +138,15 @@ items:
             currentBaseLink: "Root"
             rootPosition: [ 0, 0, 0 ]
             rootAttitude: [ 
-              1, 0, 0, 
-              0, 1, 0, 
-              0, 0, 1 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             jointPositions: [  ]
             initialRootPosition: [ 0, 0, 0 ]
             initialRootAttitude: [ 
-              1, 0, 0, 
-              0, 1, 0, 
-              0, 0, 1 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             zmp: [ 0, 0, 0 ]
             collisionDetection: true
             selfCollisionDetection: false
@@ -161,15 +161,15 @@ items:
             currentBaseLink: "Root"
             rootPosition: [ 0, 0, 0 ]
             rootAttitude: [ 
-              1, 0, 0, 
-              0, 1, 0, 
-              0, 0, 1 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             jointPositions: [  ]
             initialRootPosition: [ 0, 0, 0 ]
             initialRootAttitude: [ 
-              1, 0, 0, 
-              0, 1, 0, 
-              0, 0, 1 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             zmp: [ 0, 0, 0 ]
             collisionDetection: true
             selfCollisionDetection: false
@@ -184,15 +184,15 @@ items:
             currentBaseLink: "Root"
             rootPosition: [ 0, 0, 0 ]
             rootAttitude: [ 
-              1, 0, 0, 
-              0, 1, 0, 
-              0, 0, 1 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             jointPositions: [  ]
             initialRootPosition: [ 0, 0, 0 ]
             initialRootAttitude: [ 
-              1, 0, 0, 
-              0, 1, 0, 
-              0, 0, 1 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             zmp: [ 0, 0, 0 ]
             collisionDetection: true
             selfCollisionDetection: false
@@ -205,17 +205,17 @@ items:
           data: 
             modelFile: "target1.wrl"
             currentBaseLink: "target1"
-            rootPosition: [ 3.414, 7.164, 5.193 ]
+            rootPosition: [ 0, 0, 0 ]
             rootAttitude: [ 
-              0.497571048, 0, -0.867423226, 
-              0, 1, 0, 
-              0.867423226, 0, 0.497571048 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             jointPositions: [  0.000000 ]
-            initialRootPosition: [ 3.414, 7.164, 5.193 ]
+            initialRootPosition: [ 0, 0, 0 ]
             initialRootAttitude: [ 
-              0.497571047, -0, -0.867423226, 
-              0, 1, -0, 
-              0.867423226, 0, 0.497571047 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             initialJointPositions: [  0.000000 ]
             zmp: [ 0, 0, 0 ]
             collisionDetection: true
@@ -229,17 +229,17 @@ items:
           data: 
             modelFile: "target2.wrl"
             currentBaseLink: "target2"
-            rootPosition: [ 3.351, 7.157, 4.986 ]
+            rootPosition: [ 0, 0, 0 ]
             rootAttitude: [ 
-              0.000796326711, 0, -0.999999683, 
-              0, 1, 0, 
-              0.999999683, 0, 0.000796326711 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             jointPositions: [  ]
-            initialRootPosition: [ 3.351, 7.157, 4.986 ]
+            initialRootPosition: [ 0, 0, 0 ]
             initialRootAttitude: [ 
-              0.000796326575, -0, -0.999999683, 
-              0, 1, -0, 
-              0.999999683, 0, 0.000796326575 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             zmp: [ 0, 0, 0 ]
             collisionDetection: true
             selfCollisionDetection: false
@@ -252,17 +252,17 @@ items:
           data: 
             modelFile: "target3.wrl"
             currentBaseLink: "target3"
-            rootPosition: [ 2.958, 7.021, 5.58 ]
+            rootPosition: [ 0, 0, 0 ]
             rootAttitude: [ 
-              -0.856888575, 1.28565983e-06, 0.515501669, 
-              2.27383078e-06, 1, 1.28565983e-06, 
-              -0.515501669, 2.27383078e-06, -0.856888575 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             jointPositions: [  ]
-            initialRootPosition: [ 2.958, 7.021, 5.58 ]
+            initialRootPosition: [ 0, 0, 0 ]
             initialRootAttitude: [ 
-              -0.856888575, 1.28565983e-06, 0.515501669, 
-              2.27383078e-06, 1, 1.28565983e-06, 
-              -0.515501669, 2.27383078e-06, -0.856888575 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             zmp: [ 0, 0, 0 ]
             collisionDetection: true
             selfCollisionDetection: false
@@ -275,17 +275,17 @@ items:
           data: 
             modelFile: "target4.wrl"
             currentBaseLink: "target4"
-            rootPosition: [ 3.187, 7.115, 5.702 ]
+            rootPosition: [ 0, 0, 0 ]
             rootAttitude: [ 
-              -0.856888575, 1.28565983e-06, 0.515501669, 
-              2.27383078e-06, 1, 1.28565983e-06, 
-              -0.515501669, 2.27383078e-06, -0.856888575 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             jointPositions: [  ]
-            initialRootPosition: [ 3.187, 7.115, 5.702 ]
+            initialRootPosition: [ 0, 0, 0 ]
             initialRootAttitude: [ 
-              -0.856888575, 1.28565983e-06, 0.515501669, 
-              2.27383078e-06, 1, 1.28565983e-06, 
-              -0.515501669, 2.27383078e-06, -0.856888575 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             zmp: [ 0, 0, 0 ]
             collisionDetection: true
             selfCollisionDetection: false

@@ -23,9 +23,9 @@ items:
             currentBaseLink: ""
             rootPosition: [ 0, 0, 0 ]
             rootAttitude: [ 
-              1, 0, 0, 
-              0, 1, 0, 
-              0, 0, 1 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             jointPositions: [  ]
             initialRootPosition: [ 0, 0, 0 ]
             initialRootAttitude: [ 
@@ -92,17 +92,17 @@ items:
           data: 
             modelFile: "target1.wrl"
             currentBaseLink: ""
-            rootPosition: [ 2.847, 10.166, 0.849 ]
+            rootPosition: [ 0, 0, 0 ]
             rootAttitude: [ 
-              0.000796326711, 0, 0.999999683, 
-              0, 1, 0, 
-              -0.999999683, 0, 0.000796326711 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             jointPositions: [  0.000000 ]
-            initialRootPosition: [ 2.847, 10.166, 0.849 ]
+            initialRootPosition: [ 0, 0, 0 ]
             initialRootAttitude: [ 
-              0.000796326575, 0, 0.999999683, 
-              0, 1, 0, 
-              -0.999999683, 0, 0.000796326575 ]
+	      1, 0, 0,
+	      0, 1, 0,
+	      0, 0, 1 ]
             initialJointPositions: [  0.000000 ]
             zmp: [ 0, 0, 0 ]
             collisionDetection: true

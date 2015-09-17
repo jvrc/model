@@ -127,8 +127,6 @@ DEF target2 Humanoid {
   humanoidBody [
     DEF target2 Joint {
       jointType "fixed"
-      translation 3.351 7.157 4.986
-      rotation -0.0 -1.0 -0.0 1.57
       children [
         DEF target2 Segment {
           mass 0
@@ -137,8 +135,8 @@ DEF target2 Humanoid {
           children [
             Transform {
               scale 1.0 1.0 10.1
-              translation 0 0 0
-              rotation 0 1 0 0
+	      translation 3.351 7.157 4.986
+	      rotation -0.0 -1.0 -0.0 1.57
               children [
                 Inline {
                   url "shape/target2-visual.wrl"

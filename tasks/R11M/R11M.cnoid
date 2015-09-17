@@ -182,17 +182,17 @@ items:
           data: 
             modelFile: "target1.wrl"
             currentBaseLink: "target1"
-            rootPosition: [ 3.211, 10.57, 1.025 ]
+            rootPosition: [ 0, 0, 0 ]
             rootAttitude: [ 
-              0.944033865, -0.0887504806, -0.317684458, 
-              0.32969693, 0.224690659, 0.916959128, 
-              -0.00999983333, -0.97038006, 0.241376352 ]
+              1, 0, 0, 
+              0, 1, 0, 
+              0, 0, 1 ]
             jointPositions: [  ]
-            initialRootPosition: [ 3.211, 10.57, 1.025 ]
+            initialRootPosition: [ 0, 0, 0 ]
             initialRootAttitude: [ 
-              0.944033865, -0.0887504804, -0.317684458, 
-              0.32969693, 0.224690659, 0.916959128, 
-              -0.00999983303, -0.97038006, 0.241376352 ]
+              1, 0, 0, 
+              0, 1, 0, 
+              0, 0, 1 ]
             zmp: [ 0, 0, 0 ]
             collisionDetection: true
             selfCollisionDetection: false
@@ -205,17 +205,17 @@ items:
           data: 
             modelFile: "target2.wrl"
             currentBaseLink: "target2"
-            rootPosition: [ 2.93, 6.743, 0.73 ]
+            rootPosition: [ 0, 0, 0 ]
             rootAttitude: [ 
-              -0.0696983599, -0.16918628, -0.983116545, 
-              -0.0120785066, 0.985584086, -0.168754614, 
-              0.997494987, 0.00011265981, -0.070737112 ]
+              1, 0, 0, 
+              0, 1, 0, 
+              0, 0, 1 ]
             jointPositions: [  ]
-            initialRootPosition: [ 2.93, 6.743, 0.73 ]
+            initialRootPosition: [ 0, 0, 0 ]
             initialRootAttitude: [ 
-              -0.0696983601, -0.16918628, -0.983116545, 
-              -0.0120785066, 0.985584086, -0.168754614, 
-              0.997494987, 0.000112659889, -0.0707371121 ]
+              1, 0, 0, 
+              0, 1, 0, 
+              0, 0, 1 ]
             zmp: [ 0, 0, 0 ]
             collisionDetection: true
             selfCollisionDetection: false
@@ -228,17 +228,17 @@ items:
           data: 
             modelFile: "target3.wrl"
             currentBaseLink: "target3"
-            rootPosition: [ 3.741, 6.359, 1.09 ]
+            rootPosition: [ 0, 0, 0 ]
             rootAttitude: [ 
-              1, 0, -0, 
-              -0, 0.000796326711, -0.999999683, 
-              0, 0.999999683, 0.000796326711 ]
+              1, 0, 0, 
+              0, 1, 0, 
+              0, 0, 1 ]
             jointPositions: [  ]
-            initialRootPosition: [ 3.741, 6.359, 1.09 ]
+            initialRootPosition: [ 0, 0, 0 ]
             initialRootAttitude: [ 
-              1, 0, -0, 
-              -0, 0.000796326575, -0.999999683, 
-              0, 0.999999683, 0.000796326575 ]
+              1, 0, 0, 
+              0, 1, 0, 
+              0, 0, 1 ]
             zmp: [ 0, 0, 0 ]
             collisionDetection: true
             selfCollisionDetection: false
@@ -251,13 +251,13 @@ items:
           data: 
             modelFile: "target4.wrl"
             currentBaseLink: "target4"
-            rootPosition: [ 4.4, 6.843, 0.364 ]
+            rootPosition: [ 0, 0, 0 ]
             rootAttitude: [ 
               1, 0, 0, 
               0, 1, 0, 
               0, 0, 1 ]
             jointPositions: [  ]
-            initialRootPosition: [ 4.4, 6.843, 0.364 ]
+            initialRootPosition: [ 0, 0, 0 ]
             initialRootAttitude: [ 
               1, 0, 0, 
               0, 1, 0, 
@@ -369,9 +369,9 @@ views:
           fieldOfView: 0.6978
           near: 0.01
           far: 100
-          eye: [ 16.2898668, -6.36382164, 6.67894082 ]
-          direction: [ -0.777814796, 0.559016153, -0.287236984 ]
-          up: [ -0.233246279, 0.167634299, 0.957859549 ]
+          eye: [ 3.43112891, 12.4633888, 0.603989442 ]
+          direction: [ 0.242125509, -0.964165368, 0.108445287 ]
+          up: [ -0.0264131439, 0.105179495, 0.994102419 ]
         - 
           camera: [ System, Orthographic ]
           orthoHeight: 20
@@ -390,6 +390,7 @@ views:
     state: 
       layoutMode: horizontal
       isAutoMode: false
+      currentTask: Wall
   - 
     id: 6
     plugin: Body
@@ -439,6 +440,16 @@ toolbars:
     speedScale: 1
     syncToOngoingUpdates: true
     autoExpansion: true
+  "KinematicsBar": 
+    mode: AUTO
+    enablePositionDragger: true
+    penetrationBlock: false
+    collisionLinkHighlight: false
+    snapDistance: 0.025
+    penetrationBlockDepth: 0.0005
+    lazyCollisionDetectionMode: true
+  "LeggedBodyBar": 
+    stanceWidth: 0.15
   "BodyMotionGenerationBar": 
     autoGenerationForNewBody: true
     balancer: false
@@ -472,16 +483,6 @@ toolbars:
     waistHeightRelaxation: false
     gravity: 9.8
     dynamicsTimeRatio: 1
-  "KinematicsBar": 
-    mode: AUTO
-    enablePositionDragger: true
-    penetrationBlock: false
-    collisionLinkHighlight: false
-    snapDistance: 0.025
-    penetrationBlockDepth: 0.0005
-    lazyCollisionDetectionMode: true
-  "LeggedBodyBar": 
-    stanceWidth: 0.15
 Body: 
   "BodyMotionEngine": 
     updateJointVelocities: false
@@ -561,12 +562,12 @@ viewAreas:
     contents: 
       type: splitter
       orientation: horizontal
-      sizes: [ 326, 1588 ]
+      sizes: [ 274, 1335 ]
       children: 
         - 
           type: splitter
           orientation: vertical
-          sizes: [ 497, 496 ]
+          sizes: [ 493, 492 ]
           children: 
             - 
               type: pane
@@ -579,12 +580,12 @@ viewAreas:
         - 
           type: splitter
           orientation: vertical
-          sizes: [ 993, 0 ]
+          sizes: [ 985, 0 ]
           children: 
             - 
               type: splitter
               orientation: horizontal
-              sizes: [ 0, 1582 ]
+              sizes: [ 0, 1329 ]
               children: 
                 - 
                   type: pane
