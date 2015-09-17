@@ -319,11 +319,11 @@ items:
           plugin: Body
           class: AISTSimulatorItem
           data: 
-            realtimeSync: false
-            recording: tail
+            realtimeSync: true
+            recording: full
             timeRangeMode: TimeBar range
             onlyActiveControlPeriod: true
-            timeLength: 3
+            timeLength: 600
             allLinkPositionOutputMode: false
             deviceStateOutput: true
             controllerThreads: true
@@ -331,14 +331,14 @@ items:
             dynamicsMode: Forward dynamics
             integrationMode: Runge Kutta
             gravity: [ 0, 0, -9.80665 ]
-            staticFriction: 0.5
-            slipFriction: 0.5
-            cullingThresh: 0.01
-            contactCullingDepth: 0.05
+            staticFriction: 1
+            slipFriction: 1
+            cullingThresh: 0.005
+            contactCullingDepth: 0.03
             errorCriterion: 0.001
             maxNumIterations: 1000
             contactCorrectionDepth: 0.0001
-            contactCorrectionVelocityRatio: 30
+            contactCorrectionVelocityRatio: 1
             kinematicWalking: false
             2Dmode: false
           children: 
@@ -385,7 +385,7 @@ views:
       viewpointControlMode: thirdPerson
       collisionLines: false
       polygonMode: fill
-      defaultHeadLight: true
+      defaultHeadLight: false
       defaultHeadLightIntensity: 0.75
       headLightLightingFromBack: false
       worldLight: true
@@ -480,7 +480,7 @@ views:
 toolbars: 
   "TimeBar": 
     minTime: 0
-    maxTime: 30
+    maxTime: 600
     frameRate: 1000
     playbackFrameRate: 50
     idleLoopDrivenMode: false
