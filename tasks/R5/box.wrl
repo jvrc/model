@@ -123,7 +123,7 @@ PROTO ExtraJoint [
 
 
 
-DEF box Humanoid {
+DEF CABINETBOX Humanoid {
   humanoidBody [
     DEF box-front Joint {
       jointType "fixed"
@@ -217,7 +217,7 @@ DEF box Humanoid {
             DEF door Segment {
               mass 0.5
               centerOfMass 1.11022302463e-16 0.0 0.2495
-              momentsOfInertia [-0.036675375 0.0 4.15500966966e-17 0.0 -0.080275375 0.0 4.15500966966e-17 0.0 0.0436]
+              momentsOfInertia [0.0447135 0.0 0.0 0.0 0.0102135 0.0 0.0 0.0 0.034508]
               children [
                 Transform {
                   scale 1.0 1.0 1.0
@@ -268,7 +268,7 @@ DEF box Humanoid {
                 DEF doorknob Segment {
                   mass 0.1
                   centerOfMass 0.021672 0.036101 0.0013232
-                  momentsOfInertia [-8.3814017732e-05 2.17828992e-05 1.155135344e-05 2.17828992e-05 1.0913999068e-05 2.771896726e-05 1.155135344e-05 2.771896726e-05 -7.04480168e-05]
+                  momentsOfInertia [1.4e-4 0 0 0 0.62e-4 0 0 0 1.6e-4]
                   children [
                     Transform {
                       scale 1.0 1.0 1.0
@@ -299,7 +299,7 @@ DEF box Humanoid {
             DEF valve Segment {
               mass 0.1
               centerOfMass 0.0 0.0 0.0
-              momentsOfInertia [1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]
+              momentsOfInertia [1.2e-4 0 0 0 1.8e-4 0 0 0 1.2e-4]
               children [
                 Transform {
                   scale 1 1 1
