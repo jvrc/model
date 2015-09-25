@@ -329,6 +329,7 @@ items:
               class: JVRCManagerItem
               data: 
                 info: "O1.yaml"
+                recordFile: "R_TEAM_O1-1"
 views: 
   - 
     id: 0
