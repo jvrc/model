@@ -5,6 +5,24 @@ tasks:
       - type: gate
         label: Gate-1
         location: [ [ 6.13, 3.183, 0.35 ], [ 3.23, 3.183, 0.35 ] ]
+        level: 0
+      - type: action
+        label: "Debris A"
+        point: 3
+        level: 1
+      - type: action
+        label: "Debris B"
+        point: 6
+        level: 1
+      - type: action
+        label: "Debris C"
+        point: 7
+        level: 1
+      - type: action
+        label: "Debris D"
+        point: 8
+        level: 1
       - type: gate
         label: Gate-2
         location: [ [ 6.13, 17.96, 0.35 ], [ 3.23, 17.96, 0.35 ] ]
+        level: 0

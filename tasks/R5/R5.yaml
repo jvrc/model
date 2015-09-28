@@ -5,6 +5,28 @@ tasks:
       - type: gate
         label: Gate-1
         location: [ [ 4.59, 3.61, 0.35 ], [ 1.79, 3.61, 0.35 ] ]
+        level: 0
+      - type: action
+        label: "Door"
+        point: 5
+        level: 0
+      - type: action
+        label: "Hose"
+        point: 5
+        level: 0
+      - type: action
+        label: "Nozzle"
+        point: 3
+        level: 0
+      - type: action
+        label: "Connect"
+        point: 7
+        level: 1
+      - type: action
+        label: "Valve"
+        point: 7
+        level: 1
       - type: gate
         label: Gate-2
         location: [ [ 4.79, 3.61, 0.35 ], [ 7.59, 3.61, 0.35 ] ]
+        level: 1

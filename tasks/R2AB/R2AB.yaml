@@ -8,6 +8,9 @@ tasks:
       - type: gate
         label: Gate-2
         location: [ [ 6.95, 7.925, 0.35 ], [ 1.95, 7.925, 0.35 ] ]
+        point: 5
       - type: gate
         label: Gate-3
         location: [ [ 6.95, 13.915, 0.35 ], [ 1.95, 13.915, 0.35 ] ]
+        point: 5
+
