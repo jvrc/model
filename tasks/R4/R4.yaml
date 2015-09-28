@@ -1,5 +1,6 @@
 tasks:
   - name: R4
+    timeLimit: 10
     events:
       - type: gate
         label: Gate-1
