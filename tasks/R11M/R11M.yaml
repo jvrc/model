@@ -1,5 +1,6 @@
 tasks:
-  - name: R11_M
+  - name: R1-1
+    label: R11_M
     timeLimit: 10
     events:
       - type: gate

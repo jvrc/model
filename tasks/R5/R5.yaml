@@ -1,5 +1,6 @@
 tasks:
-  - name: R5
+  - name: R5-1
+    label: R5
     timeLimit: 10
     events:
       - type: gate

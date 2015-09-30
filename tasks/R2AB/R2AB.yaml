@@ -1,5 +1,6 @@
 tasks:
-  - name: R2_A
+  - name: R2-A
+    label: R2_A
     timeLimit: 10
     events:
       - type: gate

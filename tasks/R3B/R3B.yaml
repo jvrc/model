@@ -1,5 +1,6 @@
 tasks:
-  - name: R3_B
+  - name: R3-B
+    label: R3_B
     timeLimit: 10
     events:
       - type: gate
