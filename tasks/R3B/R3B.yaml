@@ -8,6 +8,7 @@ tasks:
         location: [ [ 4.59, 3.035, 0.35 ], [ 1.79, 3.035, 0.35 ] ]
       - type: action
         label: "Climb Ladder"
+        subTaskLabel: R3-B
         point: 7
         level: 1
       - type: gate

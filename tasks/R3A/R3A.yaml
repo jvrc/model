@@ -8,10 +8,12 @@ tasks:
         location: [ [ 4.69, 3.035, 0.35 ], [ 1.79, 3.035, 0.35 ] ]
       - type: action
         label: "Hold Spreader"
+        subTaskLabel: R3-A-1
         point: 5
         level: 1
       - type: action
         label: "Remove Door"
+        subTaskLabel: R3-A-2
         point: 9
         level: 1
       - type: gate

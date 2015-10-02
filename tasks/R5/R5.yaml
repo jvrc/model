@@ -9,22 +9,27 @@ tasks:
         level: 0
       - type: action
         label: "Door"
+        subTaskLabel: R5-1
         point: 5
         level: 0
       - type: action
         label: "Hose"
+        subTaskLabel: R5-2
         point: 5
         level: 0
       - type: action
         label: "Nozzle"
+        subTaskLabel: R5-3
         point: 3
         level: 0
       - type: action
         label: "Connect"
+        subTaskLabel: R5-4
         point: 7
         level: 1
       - type: action
         label: "Valve"
+        subTaskLabel: R5-5
         point: 7
         level: 1
       - type: gate

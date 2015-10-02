@@ -8,19 +8,28 @@ tasks:
         location: [ [ 6.13, 3.183, 0.35 ], [ 3.23, 3.183, 0.35 ] ]
         level: 0
       - type: action
-        label: "Debris A"
-        point: 3
-        level: 1
-      - type: action
-        label: "Debris B"
+        label: "L-Big (B) 1"
+        subTaskLabel: B-1
         point: 6
         level: 1
       - type: action
-        label: "Debris C"
+        label: "L-Big (B) 2"
+        subTaskLabel: B-2
+        point: 6
+        level: 1
+      - type: action
+        label: "J-Bar (C)"
+        subTaskLabel: C-1
         point: 7
         level: 1
       - type: action
-        label: "Debris D"
+        label: "L-Small (A)"
+        subTaskLabel: A-1
+        point: 3
+        level: 1
+      - type: action
+        label: "L-Bar (D)"
+        subTaskLabel: D-1
         point: 8
         level: 1
       - type: gate
