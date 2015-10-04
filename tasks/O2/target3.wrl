@@ -135,7 +135,7 @@ DEF target3 Humanoid {
           children [
             Transform {
               scale 5.0 5.0 10.0
-	      translation 3.377 7.171 5.136
+	      translation 3.407 7.171 5.106
 	      rotation -0.0 -1.0 -0.0 1.2
               children [
                 Inline {
