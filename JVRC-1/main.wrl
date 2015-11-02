@@ -465,7 +465,7 @@ DEF JVRC-1 Humanoid {
 			      ulimit [0.9599310885968813] #+55
 			      llimit [-1.4835298641951802] #-85
 			      uvlimit [ 14.18435]
-			      uvlimit [-14.18435]
+			      lvlimit [-14.18435]
 			      rotorInertia 0.1337
 			      children [
 			        DEF L_ANKLE_P_S Segment {
